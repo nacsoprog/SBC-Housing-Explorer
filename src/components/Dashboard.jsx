@@ -58,6 +58,35 @@ const Dashboard = () => {
         }
     }, []);
 
+    // Calculate slider maxes dynamically based on selected region's estimated households.
+    // If no region or data, use default large numbers.
+    const scenarioMaxes = React.useMemo(() => {
+        let baseMaxPop = 200000;
+        let baseMaxTier = 500;
+        let baseMaxAbove = 2000;
+
+        if (scenarioRegion && vacancyData[scenarioRegion]) {
+            const vac = vacancyData[scenarioRegion];
+            const estHouseholds = (vac.occupied || 0) + (vac.totalVacant || 0);
+            if (estHouseholds > 0) {
+                // Population is roughly households * 2.8. Let's add padding (e.g., 2.5x the estimate).
+                baseMaxPop = Math.ceil((estHouseholds * 2.8 * 2.5) / 1000) * 1000;
+                // RHNA/Permit totals scale with households. We'll set the max to around 4% of households as padding.
+                baseMaxTier = Math.max(100, Math.ceil((estHouseholds * 0.04) / 50) * 50);
+                // Above moderate is larger, so ~12% padding.
+                baseMaxAbove = Math.max(200, Math.ceil((estHouseholds * 0.12) / 100) * 100);
+            }
+        }
+
+        return {
+            population: baseMaxPop,
+            very_low: baseMaxTier,
+            low: baseMaxTier,
+            moderate: baseMaxTier,
+            above_moderate: baseMaxAbove,
+        };
+    }, [scenarioRegion]);
+
     const handleScenarioChange = (key, value) => {
         const updated = { ...scenarioVars, [key]: Number(value) };
         setScenarioVars(updated);
@@ -461,27 +490,30 @@ const Dashboard = () => {
                             </select>
 
                             {[
-                                { key: 'population', label: 'Population', max: 200000 },
-                                { key: 'very_low', label: 'Very Low Income', max: 500 },
-                                { key: 'low', label: 'Low Income', max: 500 },
-                                { key: 'moderate', label: 'Moderate Income', max: 500 },
-                                { key: 'above_moderate', label: 'Above Moderate Income', max: 2000 },
-                            ].map(({ key, label, max }) => (
-                                <div key={key}>
-                                    <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '4px' }}>
-                                        <span style={{ color: 'var(--text-muted)' }}>{label}</span>
-                                        <span style={{ color: 'white', fontWeight: 600 }}>{scenarioVars[key]}</span>
+                                { key: 'population', label: 'Population' },
+                                { key: 'very_low', label: 'Very Low Income' },
+                                { key: 'low', label: 'Low Income' },
+                                { key: 'moderate', label: 'Moderate Income' },
+                                { key: 'above_moderate', label: 'Above Moderate Income' },
+                            ].map(({ key, label }) => {
+                                const max = scenarioMaxes[key];
+                                return (
+                                    <div key={key}>
+                                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '4px' }}>
+                                            <span style={{ color: 'var(--text-muted)' }}>{label}</span>
+                                            <span style={{ color: 'white', fontWeight: 600 }}>{scenarioVars[key]}</span>
+                                        </div>
+                                        <input
+                                            type="range"
+                                            min={0}
+                                            max={max}
+                                            value={scenarioVars[key]}
+                                            onChange={(e) => handleScenarioChange(key, e.target.value)}
+                                            style={{ width: '100%', cursor: 'pointer', accentColor: 'var(--accent-purple)' }}
+                                        />
                                     </div>
-                                    <input
-                                        type="range"
-                                        min={0}
-                                        max={max}
-                                        value={scenarioVars[key]}
-                                        onChange={(e) => handleScenarioChange(key, e.target.value)}
-                                        style={{ width: '100%', cursor: 'pointer', accentColor: 'var(--accent-purple)' }}
-                                    />
-                                </div>
-                            ))}
+                                );
+                            })}
 
                             <div style={{ marginTop: '4px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
                                 <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Predicted Burden:</span>
