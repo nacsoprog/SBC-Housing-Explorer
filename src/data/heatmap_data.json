@@ -1,0 +1,158 @@
+{
+  "Santa Barbara": {
+    "entitlements": 1375,
+    "permits": 2311,
+    "cos": 1545,
+    "frictionRate": 0.3315
+  },
+  "Goleta": {
+    "entitlements": 507,
+    "permits": 692,
+    "cos": 941,
+    "frictionRate": 0
+  },
+  "Santa Maria": {
+    "entitlements": 4093,
+    "permits": 4278,
+    "cos": 3020,
+    "frictionRate": 0.2941
+  },
+  "Orcutt": {
+    "entitlements": 110,
+    "permits": 157,
+    "cos": 117,
+    "frictionRate": 0.2548
+  },
+  "Solvang": {
+    "entitlements": 65,
+    "permits": 110,
+    "cos": 77,
+    "frictionRate": 0.3
+  },
+  "Buellton": {
+    "entitlements": 533,
+    "permits": 262,
+    "cos": 119,
+    "frictionRate": 0.7767
+  },
+  "Lompoc": {
+    "entitlements": 90,
+    "permits": 161,
+    "cos": 155,
+    "frictionRate": 0.0373
+  },
+  "Carpinteria": {
+    "entitlements": 149,
+    "permits": 167,
+    "cos": 71,
+    "frictionRate": 0.5749
+  },
+  "Montecito": {
+    "entitlements": 5,
+    "permits": 13,
+    "cos": 3,
+    "frictionRate": 0.7692
+  },
+  "Isla Vista": {
+    "entitlements": 0,
+    "permits": 1,
+    "cos": 0,
+    "frictionRate": 1
+  },
+  "Santa Ynez": {
+    "entitlements": 41,
+    "permits": 158,
+    "cos": 97,
+    "frictionRate": 0.3861
+  },
+  "Los Olivos": {
+    "entitlements": 9,
+    "permits": 12,
+    "cos": 9,
+    "frictionRate": 0.25
+  },
+  "Los Alamos": {
+    "entitlements": 10,
+    "permits": 19,
+    "cos": 9,
+    "frictionRate": 0.5263
+  },
+  "Mission Canyon": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Summerland": {
+    "entitlements": 10,
+    "permits": 27,
+    "cos": 13,
+    "frictionRate": 0.5185
+  },
+  "Vandenberg Village": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Mission Hills": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "New Cuyama": {
+    "entitlements": 33,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": 1
+  },
+  "Cuyama": {
+    "entitlements": 1,
+    "permits": 2,
+    "cos": 1,
+    "frictionRate": 0.5
+  },
+  "Garey": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Sisquoc": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Casmalia": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Toro Canyon": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Vandenberg AFB": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  },
+  "Guadalupe": {
+    "entitlements": 305,
+    "permits": 598,
+    "cos": 123,
+    "frictionRate": 0.7943
+  },
+  "Eastern Goleta Valley": {
+    "entitlements": 0,
+    "permits": 0,
+    "cos": 0,
+    "frictionRate": null
+  }
+}
