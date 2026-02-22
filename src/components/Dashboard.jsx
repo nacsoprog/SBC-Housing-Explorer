@@ -102,14 +102,6 @@ const Dashboard = () => {
 
     const handleRegionSelect = (regionName) => {
         setSelectedRegion(selectedRegion === regionName ? null : regionName);
-        if (regionName) {
-            setScenarioRegion(regionName);
-            setScenarioOpen(true);
-            fetchPrediction(scenarioVars, regionName);
-        } else {
-            setScenarioRegion("");
-            setScenarioPrediction(null);
-        }
     };
 
     const cardStyle = {

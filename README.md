@@ -189,9 +189,7 @@ Aggregates `PFS_Datathon.csv` by jurisdiction, computing total entitlements, per
 | Library | Role |
 |---------|------|
 | tidymodels | Modeling framework (recipes, workflows, tuning) |
-| glmnet | Ridge, Lasso, Elastic Net |
-| kknn | K-Nearest Neighbors |
-| ranger | Random Forest |
+| glmnet | Ridge, Lasso, Elastic Net, Random Forest |
 | xgboost | Gradient Boosted Trees |
 | ggcorrplot | Correlation matrix visualization |
 | readxl / writexl | Excel I/O |

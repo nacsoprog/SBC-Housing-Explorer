@@ -368,8 +368,9 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                             {({ geographies, projection }) =>
                                 geographies.map((geo) => {
                                     const name = geo.properties.NAME;
-                                    const isHighlighted = (highlightedRegion === name) || (hoveredRegion === name);
                                     const isSelected = selectedRegion === name;
+                                    // Highlight only on hover or explicit search match. Selection (click) does not highlight.
+                                    const isHighlighted = (highlightedRegion === name) || (hoveredRegion === name);
 
                                     // --- Friction layer ---
                                     const regionData = getRegionData(name);
@@ -431,11 +432,6 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                                                 ? renterColorScale(rate)
                                                 : overallScale(rate);
                                         hoverFillStyle = fillStyle;
-                                    }
-
-                                    if (isSelected && !scenarioOverride && (activeLayer === 'permits' || activeLayer === 'ims' || activeLayer === 'costburden' || activeLayer === 'availability')) {
-                                        fillStyle = "rgba(255,255,255,0.25)";
-                                        hoverFillStyle = "rgba(255,255,255,0.25)";
                                     }
 
                                     if (scenarioOverride && scenarioOverride.region === name) {
