@@ -9,7 +9,7 @@
     "entitlements": 507,
     "permits": 692,
     "cos": 941,
-    "frictionRate": 0
+    "frictionRate": null
   },
   "Santa Maria": {
     "entitlements": 4093,
@@ -51,13 +51,13 @@
     "entitlements": 5,
     "permits": 13,
     "cos": 3,
-    "frictionRate": 0.7692
+    "frictionRate": null
   },
   "Isla Vista": {
     "entitlements": 0,
     "permits": 1,
     "cos": 0,
-    "frictionRate": 1
+    "frictionRate": null
   },
   "Santa Ynez": {
     "entitlements": 41,
@@ -69,13 +69,13 @@
     "entitlements": 9,
     "permits": 12,
     "cos": 9,
-    "frictionRate": 0.25
+    "frictionRate": null
   },
   "Los Alamos": {
     "entitlements": 10,
     "permits": 19,
     "cos": 9,
-    "frictionRate": 0.5263
+    "frictionRate": null
   },
   "Mission Canyon": {
     "entitlements": 0,
@@ -105,13 +105,13 @@
     "entitlements": 33,
     "permits": 0,
     "cos": 0,
-    "frictionRate": 1
+    "frictionRate": null
   },
   "Cuyama": {
     "entitlements": 1,
     "permits": 2,
     "cos": 1,
-    "frictionRate": 0.5
+    "frictionRate": null
   },
   "Garey": {
     "entitlements": 0,

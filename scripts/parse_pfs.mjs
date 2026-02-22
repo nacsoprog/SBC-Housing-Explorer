@@ -83,14 +83,28 @@ fs.createReadStream(CSV_PATH)
         const finalData = {};
 
         for (const [region, d] of Object.entries(results)) {
-            // pipelineStart = highest point in the funnel (entitlements, or permits if more permits were issued, etc.)
+            // pipelineStart = highest point in the funnel
             const pipelineStart = Math.max(d.entitlements, d.permits, d.cos);
 
-            // frictionRate: 0 = smooth (COs ≈ pipeline start), 1 = total friction (no units completed)
-            // Only set for regions with any real activity
             let frictionRate = null;
+
             if (pipelineStart > 0) {
-                frictionRate = parseFloat((1 - (d.cos / pipelineStart)).toFixed(4));
+                // Guard 1: COs >= pipelineStart means a cross-year timing artifact
+                // (completions exceeded what the dataset recorded as started).
+                if (d.cos >= pipelineStart && d.cos > 0) {
+                    console.log(`${region}: EXCLUDED — COs (${d.cos}) >= pipeline start (${pipelineStart}), cross-year artifact`);
+                }
+                // Guard 2: no permits ever issued — can't measure construction friction without permits
+                else if (d.permits === 0) {
+                    console.log(`${region}: EXCLUDED — no building permits issued (entitlements only)`);
+                }
+                // Guard 3: pipeline too small to be statistically meaningful (< 20 units)
+                else if (pipelineStart < 20) {
+                    console.log(`${region}: EXCLUDED — pipeline volume too small (${pipelineStart} units)`);
+                }
+                else {
+                    frictionRate = parseFloat((1 - (d.cos / pipelineStart)).toFixed(4));
+                }
             }
 
             finalData[region] = {

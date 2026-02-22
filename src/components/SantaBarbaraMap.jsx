@@ -56,12 +56,16 @@ const ANNOTATED_PLACES = {
     "Cuyama": { dx: -10, dy: 30 }
 };
 
-const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
+const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onRegionSelect = () => { } }) => {
     const [position, setPosition] = useState({ coordinates: [-120.0, 34.73], zoom: 0.95 });
     const [searchTerm, setSearchTerm] = useState("");
     const [highlightedRegion, setHighlightedRegion] = useState(null);
     const [hoveredRegion, setHoveredRegion] = useState(null);
     const [isAnimatingZoom, setIsAnimatingZoom] = useState(false);
+
+    const handleClick = (name) => {
+        onRegionSelect(name);
+    };
 
     const handleMouseEnter = (name) => {
         setHoveredRegion(name);
@@ -158,8 +162,8 @@ const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
                             <div style={{ width: '100%', height: '8px', background: 'linear-gradient(to right, #ffd1d6, #ffb0b9, #ff828f, #ff5a5f, #e03c41)', borderRadius: '4px' }}></div>
                         </div>
                         <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.75rem', fontWeight: 500 }}>
-                            <span>Easy (0%)</span>
-                            <span>Hard (100%)</span>
+                            <span>Easy (0)</span>
+                            <span>Hard (1)</span>
                         </div>
                     </div>
                 )}
@@ -223,6 +227,7 @@ const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
                                 geographies.map((geo) => {
                                     const name = geo.properties.NAME;
                                     const isHighlighted = (highlightedRegion === name) || (hoveredRegion === name);
+                                    const isSelected = selectedRegion === name;
 
                                     const regionData = getRegionData(name);
                                     const hasData = regionData !== null;
@@ -236,12 +241,18 @@ const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
                                         hoverFillStyle = fillStyle;
                                     }
 
+                                    if (isSelected && activeLayer === 'permits') {
+                                        fillStyle = "rgba(255,255,255,0.25)";
+                                        hoverFillStyle = "rgba(255,255,255,0.25)";
+                                    }
+
                                     if (isHighlighted && (activeLayer === 'none' || !hasData)) {
                                         fillStyle = "var(--accent-purple)";
                                         hoverFillStyle = "var(--accent-purple)";
                                     }
 
                                     const onEnter = () => handleMouseEnter(name);
+                                    const onClick = () => handleClick(name);
 
                                     let annotation = ANNOTATED_PLACES[name];
                                     if (activeLayer !== 'none' && !hasData) {
@@ -264,11 +275,12 @@ const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
                                                 className="geography-path"
                                                 onMouseEnter={onEnter}
                                                 onMouseLeave={handleMouseLeave}
+                                                onClick={onClick}
                                                 fill={fillStyle}
-                                                stroke={isHighlighted ? "#fff" : "var(--map-place-stroke)"}
-                                                strokeWidth={isHighlighted ? 1.0 : 0.5}
+                                                stroke={isSelected ? "#fff" : isHighlighted ? "#fff" : "var(--map-place-stroke)"}
+                                                strokeWidth={isSelected ? 1.5 : isHighlighted ? 1.0 : 0.5}
                                                 style={{
-                                                    default: { outline: "none" },
+                                                    default: { outline: "none", cursor: 'pointer' },
                                                     hover: {
                                                         fill: hoverFillStyle,
                                                         outline: "none"
@@ -299,6 +311,7 @@ const SantaBarbaraMap = ({ activeLayer = 'permits' }) => {
                                                         fontWeight={500}
                                                         onMouseEnter={onEnter}
                                                         onMouseLeave={handleMouseLeave}
+                                                        onClick={onClick}
                                                         style={{ cursor: "pointer", pointerEvents: "all", filter: "drop-shadow(0px 2px 4px rgba(0,0,0,0.6))" }}
                                                     >
                                                         {annotation.label || name}
