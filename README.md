@@ -96,6 +96,23 @@ Selected results:
 
 ---
 
+### 3. AI Housing Advisor & Predictive Backend (Python / FastAPI)
+
+A dynamic backend service providing localized AI recommendations and real-time model inference.
+
+#### AI Advisor (RAG Pipeline)
+
+Leverages a Retrieval-Augmented Generation (RAG) pipeline powered by **Llama-3.3** (via Groq) to provide context-aware recommendations:
+
+- **Where to Build:** Analyzes workforce signals and affordability metrics to recommend jurisdiction targets for new affordable housing.
+- **Worker Matching:** Matches specific job titles and income levels to viable Santa Barbara County communities, incorporating live workforce data.
+
+#### Burden Prediction API
+
+Serves the optimal predictive model (exported as `.onnx`) from the R statistical analysis, exposing a `/predict` endpoint that outputs expected cost burden rates given hypothetical housing pipeline metrics.
+
+---
+
 ## Repository Structure
 
 ```
@@ -116,6 +133,11 @@ datathon-project/
 │   │   ├── santa_barbara_places.json  # 28 places GeoJSON
 │   │   └── heatmap_data.json          # Per-region friction metrics (generated)
 │   └── index.css              # Dark theme, glassmorphism design system
+├── backend/
+│   ├── main.py                # FastAPI server and endpoints
+│   ├── rag_pipeline.py        # RAG implementation for AI Advisor
+│   └── requirements.txt       # Python dependencies
+├── burden_model.onnx          # Exported predictive model for inference
 ├── PFS_Datathon.csv           # Source: ~9,287 rows, CA HCD PFS reports
 ├── package.json
 └── README.md
@@ -175,13 +197,34 @@ Aggregates `PFS_Datathon.csv` by jurisdiction, computing total entitlements, per
 | readxl / writexl | Excel I/O |
 | janitor | Column name cleaning |
 
+### AI & Backend
+
+| Technology | Role |
+|------------|------|
+| Python / FastAPI | High-performance backend API |
+| Groq API (Llama-3.3) | Large language model for AI Advisor |
+| ONNX Runtime | Predictive model inference |
+| uvicorn | ASGI web server |
+
 ---
 
 ## Setup
 
 ### Prerequisites
 
-Node.js 18+ (visualization); R 4.x with the libraries listed in `Datathon.Rmd` (analysis).
+Node.js 18+ (visualization); Python 3.9+ (backend); R 4.x with the libraries listed in `Datathon.Rmd` (analysis).
+
+### Run Backend
+
+```bash
+cd backend
+python -m venv .venv
+source .venv/bin/activate
+pip install -r requirements.txt
+uvicorn main:app --reload
+```
+
+Requires a `.env` file with `GROQ_API_KEY`. The API runs at [http://localhost:8000](http://localhost:8000).
 
 ### Run Visualization
 

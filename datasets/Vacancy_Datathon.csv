@@ -1,0 +1,35 @@
+Place,Total Vacant,For rent,"Rented, not occupied",For sale only,"Sold, not occupied","For seasonal, recreational, or occasional use",For migrant workers,Other vacant
+"Ballard CDP, California",66,0,0,3,9,0,8,46
+"Buellton city, California",297,18,0,0,134,145,0,0
+"Carpinteria city, California",921,139,0,50,72,617,0,43
+"Casmalia CDP, California",0,0,0,0,0,0,0,0
+"Cuyama CDP, California",0,0,0,0,0,0,0,0
+"Eastern Goleta Valley CDP, California",648,106,42,9,56,182,0,253
+"Garey CDP, California",0,0,0,0,0,0,0,0
+"Goleta city, California",592,155,55,142,11,77,0,152
+"Guadalupe city, California",143,22,0,0,0,0,0,121
+"Isla Vista CDP, California",577,140,313,0,0,9,0,115
+"Lompoc city, California",627,340,21,0,31,80,0,155
+"Los Alamos CDP, California",128,0,0,0,0,90,0,38
+"Los Olivos CDP, California",47,0,0,0,0,35,0,12
+"Mission Canyon CDP, California",107,0,0,0,0,34,0,73
+"Mission Hills CDP, California",0,0,0,0,0,0,0,0
+"Montecito CDP, California",798,37,20,41,53,452,0,195
+"New Cuyama CDP, California",87,0,0,22,0,21,0,44
+"Orcutt CDP, California",393,97,19,27,39,101,0,110
+"Santa Barbara city, California","2,397",473,139,93,214,809,0,669
+"Santa Maria city, California","1,120",520,87,112,44,32,25,300
+"Santa Ynez CDP, California",206,0,0,9,0,187,0,10
+"Sisquoc CDP, California",0,0,0,0,0,0,0,0
+"Solvang city, California",93,0,42,0,0,12,0,39
+"Summerland CDP, California",197,79,0,0,0,94,0,24
+"Toro Canyon CDP, California",257,37,0,0,0,161,0,59
+"University of California-Santa Barbara CDP, California",49,27,0,0,0,9,0,13
+"Vandenberg AFB CDP, California",13,13,0,0,0,0,0,0
+"Vandenberg Village CDP, California",135,0,0,135,0,0,0,0
+"Santa Barbara County, California","10,806","2,230",784,648,710,"3,685",88,"2,661"
+Santa Barbara County (Northwest)--Santa Maria City & Orcutt PUMA,"1,423",617,71,115,83,122,25,390
+"Santa Barbara County (North)--Lompoc, Guadalupe, Solvang & Buellton Cities PUMA","2,665",403,144,198,221,974,63,662
+Santa Barbara County--South Coast Region PUMA,"6,718","1,210",569,335,406,"2,589",0,"1,609"
+North County (Santa Maria/Orcutt + Lompoc/Guadalupe/Solvang/Buellton PUMAs),4088.00,1020.00,215.00,313.00,304.00,1096.00,88.00,1052.00
+South Coast (PUMA),"6,718","1,210",569,335,406,"2,589",0,"1,609"

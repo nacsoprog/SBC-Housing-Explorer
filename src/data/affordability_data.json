@@ -1,0 +1,1098 @@
+{
+  "Ballard": {
+    "2017": {
+      "ownerBurdened": 8,
+      "ownerTotal": 15,
+      "ownerRate": 0.5333,
+      "renterBurdened": 4,
+      "renterTotal": 10,
+      "renterRate": 0.4
+    },
+    "2018": {
+      "ownerBurdened": 34,
+      "ownerTotal": 35,
+      "ownerRate": 0.9714,
+      "renterBurdened": 4,
+      "renterTotal": 4,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 30,
+      "renterTotal": 30,
+      "renterRate": 1
+    },
+    "2020": {
+      "ownerBurdened": 14,
+      "ownerTotal": 10,
+      "ownerRate": 1.4,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2021": {
+      "ownerBurdened": 19,
+      "ownerTotal": 135,
+      "ownerRate": 0.1407,
+      "renterBurdened": 10,
+      "renterTotal": 45,
+      "renterRate": 0.2222
+    }
+  },
+  "Buellton": {
+    "2017": {
+      "ownerBurdened": 20,
+      "ownerTotal": 40,
+      "ownerRate": 0.5,
+      "renterBurdened": 75,
+      "renterTotal": 75,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 50,
+      "ownerTotal": 110,
+      "ownerRate": 0.4545,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 95,
+      "ownerTotal": 315,
+      "ownerRate": 0.3016,
+      "renterBurdened": 145,
+      "renterTotal": 140,
+      "renterRate": 1.0357
+    },
+    "2020": {
+      "ownerBurdened": 35,
+      "ownerTotal": 125,
+      "ownerRate": 0.28,
+      "renterBurdened": 35,
+      "renterTotal": 35,
+      "renterRate": 1
+    },
+    "2021": {
+      "ownerBurdened": 155,
+      "ownerTotal": 735,
+      "ownerRate": 0.2109,
+      "renterBurdened": 10,
+      "renterTotal": 340,
+      "renterRate": 0.0294
+    }
+  },
+  "Carpinteria": {
+    "2017": {
+      "ownerBurdened": 210,
+      "ownerTotal": 245,
+      "ownerRate": 0.8571,
+      "renterBurdened": 260,
+      "renterTotal": 290,
+      "renterRate": 0.8966
+    },
+    "2018": {
+      "ownerBurdened": 195,
+      "ownerTotal": 260,
+      "ownerRate": 0.75,
+      "renterBurdened": 220,
+      "renterTotal": 255,
+      "renterRate": 0.8627
+    },
+    "2019": {
+      "ownerBurdened": 170,
+      "ownerTotal": 375,
+      "ownerRate": 0.4533,
+      "renterBurdened": 485,
+      "renterTotal": 570,
+      "renterRate": 0.8509
+    },
+    "2020": {
+      "ownerBurdened": 50,
+      "ownerTotal": 185,
+      "ownerRate": 0.2703,
+      "renterBurdened": 265,
+      "renterTotal": 360,
+      "renterRate": 0.7361
+    },
+    "2021": {
+      "ownerBurdened": 355,
+      "ownerTotal": 1665,
+      "ownerRate": 0.2132,
+      "renterBurdened": 75,
+      "renterTotal": 760,
+      "renterRate": 0.0987
+    }
+  },
+  "Casmalia": {
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 0,
+      "renterTotal": 20,
+      "renterRate": 0
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 10,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 10,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    }
+  },
+  "Cuyama": {
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    }
+  },
+  "Eastern Goleta Valley": {
+    "2017": {
+      "ownerBurdened": 345,
+      "ownerTotal": 410,
+      "ownerRate": 0.8415,
+      "renterBurdened": 275,
+      "renterTotal": 310,
+      "renterRate": 0.8871
+    },
+    "2018": {
+      "ownerBurdened": 335,
+      "ownerTotal": 535,
+      "ownerRate": 0.6262,
+      "renterBurdened": 195,
+      "renterTotal": 270,
+      "renterRate": 0.7222
+    },
+    "2019": {
+      "ownerBurdened": 205,
+      "ownerTotal": 665,
+      "ownerRate": 0.3083,
+      "renterBurdened": 255,
+      "renterTotal": 370,
+      "renterRate": 0.6892
+    },
+    "2020": {
+      "ownerBurdened": 130,
+      "ownerTotal": 450,
+      "ownerRate": 0.2889,
+      "renterBurdened": 90,
+      "renterTotal": 185,
+      "renterRate": 0.4865
+    },
+    "2021": {
+      "ownerBurdened": 1040,
+      "ownerTotal": 5465,
+      "ownerRate": 0.1903,
+      "renterBurdened": 415,
+      "renterTotal": 1615,
+      "renterRate": 0.257
+    }
+  },
+  "Garey": {
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 4,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 15,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    }
+  },
+  "Goleta": {
+    "2017": {
+      "ownerBurdened": 275,
+      "ownerTotal": 370,
+      "ownerRate": 0.7432,
+      "renterBurdened": 560,
+      "renterTotal": 720,
+      "renterRate": 0.7778
+    },
+    "2018": {
+      "ownerBurdened": 225,
+      "ownerTotal": 290,
+      "ownerRate": 0.7759,
+      "renterBurdened": 370,
+      "renterTotal": 420,
+      "renterRate": 0.881
+    },
+    "2019": {
+      "ownerBurdened": 230,
+      "ownerTotal": 630,
+      "ownerRate": 0.3651,
+      "renterBurdened": 900,
+      "renterTotal": 1230,
+      "renterRate": 0.7317
+    },
+    "2020": {
+      "ownerBurdened": 170,
+      "ownerTotal": 305,
+      "ownerRate": 0.5574,
+      "renterBurdened": 520,
+      "renterTotal": 850,
+      "renterRate": 0.6118
+    },
+    "2021": {
+      "ownerBurdened": 745,
+      "ownerTotal": 4420,
+      "ownerRate": 0.1686,
+      "renterBurdened": 225,
+      "renterTotal": 2355,
+      "renterRate": 0.0955
+    }
+  },
+  "Guadalupe": {
+    "2017": {
+      "ownerBurdened": 105,
+      "ownerTotal": 170,
+      "ownerRate": 0.6176,
+      "renterBurdened": 335,
+      "renterTotal": 380,
+      "renterRate": 0.8816
+    },
+    "2018": {
+      "ownerBurdened": 15,
+      "ownerTotal": 105,
+      "ownerRate": 0.1429,
+      "renterBurdened": 65,
+      "renterTotal": 135,
+      "renterRate": 0.4815
+    },
+    "2019": {
+      "ownerBurdened": 4,
+      "ownerTotal": 300,
+      "ownerRate": 0.0133,
+      "renterBurdened": 75,
+      "renterTotal": 275,
+      "renterRate": 0.2727
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 50,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 75,
+      "renterRate": 0
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 440,
+      "ownerRate": 0,
+      "renterBurdened": 4,
+      "renterTotal": 125,
+      "renterRate": 0.032
+    }
+  },
+  "Isla Vista": {
+    "2017": {
+      "ownerBurdened": 20,
+      "ownerTotal": 20,
+      "ownerRate": 1,
+      "renterBurdened": 2305,
+      "renterTotal": 2615,
+      "renterRate": 0.8815
+    },
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 10,
+      "ownerRate": 0,
+      "renterBurdened": 665,
+      "renterTotal": 725,
+      "renterRate": 0.9172
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 525,
+      "renterTotal": 645,
+      "renterRate": 0.814
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 95,
+      "renterTotal": 255,
+      "renterRate": 0.3725
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 15,
+      "ownerRate": 0,
+      "renterBurdened": 100,
+      "renterTotal": 285,
+      "renterRate": 0.3509
+    }
+  },
+  "Lompoc": {
+    "2017": {
+      "ownerBurdened": 575,
+      "ownerTotal": 740,
+      "ownerRate": 0.777,
+      "renterBurdened": 1515,
+      "renterTotal": 1925,
+      "renterRate": 0.787
+    },
+    "2018": {
+      "ownerBurdened": 325,
+      "ownerTotal": 780,
+      "ownerRate": 0.4167,
+      "renterBurdened": 1425,
+      "renterTotal": 1650,
+      "renterRate": 0.8636
+    },
+    "2019": {
+      "ownerBurdened": 400,
+      "ownerTotal": 1030,
+      "ownerRate": 0.3883,
+      "renterBurdened": 625,
+      "renterTotal": 1690,
+      "renterRate": 0.3698
+    },
+    "2020": {
+      "ownerBurdened": 320,
+      "ownerTotal": 1035,
+      "ownerRate": 0.3092,
+      "renterBurdened": 100,
+      "renterTotal": 680,
+      "renterRate": 0.1471
+    },
+    "2021": {
+      "ownerBurdened": 135,
+      "ownerTotal": 2720,
+      "ownerRate": 0.0496,
+      "renterBurdened": 120,
+      "renterTotal": 1195,
+      "renterRate": 0.1004
+    }
+  },
+  "Los Alamos": {
+    "2018": {
+      "ownerBurdened": 40,
+      "ownerTotal": 40,
+      "ownerRate": 1,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2019": {
+      "ownerBurdened": 65,
+      "ownerTotal": 130,
+      "ownerRate": 0.5,
+      "renterBurdened": 0,
+      "renterTotal": 80,
+      "renterRate": 0
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 210,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 35,
+      "renterRate": 0
+    }
+  },
+  "Los Olivos": {
+    "2017": {
+      "ownerBurdened": 20,
+      "ownerTotal": 20,
+      "ownerRate": 1,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 30,
+      "ownerTotal": 30,
+      "ownerRate": 1,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 10,
+      "ownerTotal": 10,
+      "ownerRate": 1,
+      "renterBurdened": 30,
+      "renterTotal": 30,
+      "renterRate": 1
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 30,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2021": {
+      "ownerBurdened": 10,
+      "ownerTotal": 210,
+      "ownerRate": 0.0476,
+      "renterBurdened": 10,
+      "renterTotal": 25,
+      "renterRate": 0.4
+    }
+  },
+  "Mission Canyon": {
+    "2017": {
+      "ownerBurdened": 29,
+      "ownerTotal": 30,
+      "ownerRate": 0.9667,
+      "renterBurdened": 20,
+      "renterTotal": 30,
+      "renterRate": 0.6667
+    },
+    "2018": {
+      "ownerBurdened": 44,
+      "ownerTotal": 60,
+      "ownerRate": 0.7333,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2019": {
+      "ownerBurdened": 34,
+      "ownerTotal": 70,
+      "ownerRate": 0.4857,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 75,
+      "ownerRate": 0,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2021": {
+      "ownerBurdened": 120,
+      "ownerTotal": 555,
+      "ownerRate": 0.2162,
+      "renterBurdened": 30,
+      "renterTotal": 135,
+      "renterRate": 0.2222
+    }
+  },
+  "Mission Hills": {
+    "2017": {
+      "ownerBurdened": 25,
+      "ownerTotal": 50,
+      "ownerRate": 0.5,
+      "renterBurdened": 20,
+      "renterTotal": 20,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 35,
+      "ownerTotal": 45,
+      "ownerRate": 0.7778,
+      "renterBurdened": 15,
+      "renterTotal": 30,
+      "renterRate": 0.5
+    },
+    "2019": {
+      "ownerBurdened": 44,
+      "ownerTotal": 95,
+      "ownerRate": 0.4632,
+      "renterBurdened": 20,
+      "renterTotal": 70,
+      "renterRate": 0.2857
+    },
+    "2020": {
+      "ownerBurdened": 65,
+      "ownerTotal": 155,
+      "ownerRate": 0.4194,
+      "renterBurdened": 20,
+      "renterTotal": 65,
+      "renterRate": 0.3077
+    },
+    "2021": {
+      "ownerBurdened": 14,
+      "ownerTotal": 540,
+      "ownerRate": 0.0259,
+      "renterBurdened": 0,
+      "renterTotal": 125,
+      "renterRate": 0
+    }
+  },
+  "Montecito": {
+    "2017": {
+      "ownerBurdened": 99,
+      "ownerTotal": 130,
+      "ownerRate": 0.7615,
+      "renterBurdened": 110,
+      "renterTotal": 145,
+      "renterRate": 0.7586
+    },
+    "2018": {
+      "ownerBurdened": 35,
+      "ownerTotal": 65,
+      "ownerRate": 0.5385,
+      "renterBurdened": 74,
+      "renterTotal": 85,
+      "renterRate": 0.8706
+    },
+    "2019": {
+      "ownerBurdened": 40,
+      "ownerTotal": 105,
+      "ownerRate": 0.381,
+      "renterBurdened": 24,
+      "renterTotal": 60,
+      "renterRate": 0.4
+    },
+    "2020": {
+      "ownerBurdened": 35,
+      "ownerTotal": 65,
+      "ownerRate": 0.5385,
+      "renterBurdened": 100,
+      "renterTotal": 105,
+      "renterRate": 0.9524
+    },
+    "2021": {
+      "ownerBurdened": 440,
+      "ownerTotal": 1970,
+      "ownerRate": 0.2234,
+      "renterBurdened": 65,
+      "renterTotal": 485,
+      "renterRate": 0.134
+    }
+  },
+  "New Cuyama": {
+    "2017": {
+      "ownerBurdened": 45,
+      "ownerTotal": 50,
+      "ownerRate": 0.9,
+      "renterBurdened": 4,
+      "renterTotal": 4,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 14,
+      "ownerTotal": 30,
+      "ownerRate": 0.4667,
+      "renterBurdened": 10,
+      "renterTotal": 15,
+      "renterRate": 0.6667
+    },
+    "2019": {
+      "ownerBurdened": 4,
+      "ownerTotal": 40,
+      "ownerRate": 0.1,
+      "renterBurdened": 0,
+      "renterTotal": 10,
+      "renterRate": 0
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 20,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 75,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    }
+  },
+  "Orcutt": {
+    "2017": {
+      "ownerBurdened": 330,
+      "ownerTotal": 425,
+      "ownerRate": 0.7765,
+      "renterBurdened": 285,
+      "renterTotal": 370,
+      "renterRate": 0.7703
+    },
+    "2018": {
+      "ownerBurdened": 380,
+      "ownerTotal": 580,
+      "ownerRate": 0.6552,
+      "renterBurdened": 255,
+      "renterTotal": 290,
+      "renterRate": 0.8793
+    },
+    "2019": {
+      "ownerBurdened": 785,
+      "ownerTotal": 1455,
+      "ownerRate": 0.5395,
+      "renterBurdened": 310,
+      "renterTotal": 460,
+      "renterRate": 0.6739
+    },
+    "2020": {
+      "ownerBurdened": 345,
+      "ownerTotal": 790,
+      "ownerRate": 0.4367,
+      "renterBurdened": 115,
+      "renterTotal": 265,
+      "renterRate": 0.434
+    },
+    "2021": {
+      "ownerBurdened": 315,
+      "ownerTotal": 5175,
+      "ownerRate": 0.0609,
+      "renterBurdened": 115,
+      "renterTotal": 1150,
+      "renterRate": 0.1
+    }
+  },
+  "Santa Barbara": {
+    "2017": {
+      "ownerBurdened": 855,
+      "ownerTotal": 1030,
+      "ownerRate": 0.8301,
+      "renterBurdened": 2570,
+      "renterTotal": 3835,
+      "renterRate": 0.6701
+    },
+    "2018": {
+      "ownerBurdened": 430,
+      "ownerTotal": 715,
+      "ownerRate": 0.6014,
+      "renterBurdened": 2335,
+      "renterTotal": 2950,
+      "renterRate": 0.7915
+    },
+    "2019": {
+      "ownerBurdened": 700,
+      "ownerTotal": 1365,
+      "ownerRate": 0.5128,
+      "renterBurdened": 3220,
+      "renterTotal": 3905,
+      "renterRate": 0.8246
+    },
+    "2020": {
+      "ownerBurdened": 445,
+      "ownerTotal": 1135,
+      "ownerRate": 0.3921,
+      "renterBurdened": 1405,
+      "renterTotal": 2300,
+      "renterRate": 0.6109
+    },
+    "2021": {
+      "ownerBurdened": 2060,
+      "ownerTotal": 10910,
+      "ownerRate": 0.1888,
+      "renterBurdened": 1660,
+      "renterTotal": 8775,
+      "renterRate": 0.1892
+    }
+  },
+  "Santa Maria": {
+    "2017": {
+      "ownerBurdened": 940,
+      "ownerTotal": 1315,
+      "ownerRate": 0.7148,
+      "renterBurdened": 2050,
+      "renterTotal": 2560,
+      "renterRate": 0.8008
+    },
+    "2018": {
+      "ownerBurdened": 800,
+      "ownerTotal": 1480,
+      "ownerRate": 0.5405,
+      "renterBurdened": 2855,
+      "renterTotal": 3765,
+      "renterRate": 0.7583
+    },
+    "2019": {
+      "ownerBurdened": 1215,
+      "ownerTotal": 2710,
+      "ownerRate": 0.4483,
+      "renterBurdened": 1915,
+      "renterTotal": 3740,
+      "renterRate": 0.512
+    },
+    "2020": {
+      "ownerBurdened": 550,
+      "ownerTotal": 2105,
+      "ownerRate": 0.2613,
+      "renterBurdened": 310,
+      "renterTotal": 1685,
+      "renterRate": 0.184
+    },
+    "2021": {
+      "ownerBurdened": 300,
+      "ownerTotal": 7050,
+      "ownerRate": 0.0426,
+      "renterBurdened": 55,
+      "renterTotal": 2390,
+      "renterRate": 0.023
+    }
+  },
+  "Santa Ynez": {
+    "2017": {
+      "ownerBurdened": 95,
+      "ownerTotal": 95,
+      "ownerRate": 1,
+      "renterBurdened": 130,
+      "renterTotal": 195,
+      "renterRate": 0.6667
+    },
+    "2018": {
+      "ownerBurdened": 70,
+      "ownerTotal": 90,
+      "ownerRate": 0.7778,
+      "renterBurdened": 50,
+      "renterTotal": 50,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 55,
+      "ownerTotal": 55,
+      "ownerRate": 1,
+      "renterBurdened": 35,
+      "renterTotal": 85,
+      "renterRate": 0.4118
+    },
+    "2020": {
+      "ownerBurdened": 105,
+      "ownerTotal": 120,
+      "ownerRate": 0.875,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2021": {
+      "ownerBurdened": 220,
+      "ownerTotal": 965,
+      "ownerRate": 0.228,
+      "renterBurdened": 65,
+      "renterTotal": 150,
+      "renterRate": 0.4333
+    }
+  },
+  "Sisquoc": {
+    "2017": {
+      "ownerBurdened": 4,
+      "ownerTotal": 4,
+      "ownerRate": 1,
+      "renterBurdened": 10,
+      "renterTotal": 10,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 8,
+      "renterTotal": 10,
+      "renterRate": 0.8
+    },
+    "2019": {
+      "ownerBurdened": 10,
+      "ownerTotal": 10,
+      "ownerRate": 1,
+      "renterBurdened": 4,
+      "renterTotal": 10,
+      "renterRate": 0.4
+    },
+    "2020": {
+      "ownerBurdened": 4,
+      "ownerTotal": 4,
+      "ownerRate": 1,
+      "renterBurdened": 0,
+      "renterTotal": 4,
+      "renterRate": 0
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 20,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 10,
+      "renterRate": 0
+    }
+  },
+  "Solvang": {
+    "2017": {
+      "ownerBurdened": 85,
+      "ownerTotal": 105,
+      "ownerRate": 0.8095,
+      "renterBurdened": 80,
+      "renterTotal": 80,
+      "renterRate": 1
+    },
+    "2018": {
+      "ownerBurdened": 25,
+      "ownerTotal": 25,
+      "ownerRate": 1,
+      "renterBurdened": 135,
+      "renterTotal": 135,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 110,
+      "ownerTotal": 190,
+      "ownerRate": 0.5789,
+      "renterBurdened": 130,
+      "renterTotal": 195,
+      "renterRate": 0.6667
+    },
+    "2020": {
+      "ownerBurdened": 80,
+      "ownerTotal": 95,
+      "ownerRate": 0.8421,
+      "renterBurdened": 75,
+      "renterTotal": 305,
+      "renterRate": 0.2459
+    },
+    "2021": {
+      "ownerBurdened": 180,
+      "ownerTotal": 1070,
+      "ownerRate": 0.1682,
+      "renterBurdened": 30,
+      "renterTotal": 345,
+      "renterRate": 0.087
+    }
+  },
+  "Summerland": {
+    "2017": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 0,
+      "renterTotal": 30,
+      "renterRate": 0
+    },
+    "2019": {
+      "ownerBurdened": 20,
+      "ownerTotal": 20,
+      "ownerRate": 1,
+      "renterBurdened": 45,
+      "renterTotal": 45,
+      "renterRate": 1
+    },
+    "2021": {
+      "ownerBurdened": 60,
+      "ownerTotal": 205,
+      "ownerRate": 0.2927,
+      "renterBurdened": 0,
+      "renterTotal": 50,
+      "renterRate": 0
+    }
+  },
+  "Toro Canyon": {
+    "2017": {
+      "ownerBurdened": 40,
+      "ownerTotal": 50,
+      "ownerRate": 0.8,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2018": {
+      "ownerBurdened": 70,
+      "ownerTotal": 70,
+      "ownerRate": 1,
+      "renterBurdened": 45,
+      "renterTotal": 45,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 85,
+      "ownerTotal": 100,
+      "ownerRate": 0.85,
+      "renterBurdened": 0,
+      "renterTotal": 0,
+      "renterRate": null
+    },
+    "2020": {
+      "ownerBurdened": 15,
+      "ownerTotal": 15,
+      "ownerRate": 1,
+      "renterBurdened": 15,
+      "renterTotal": 15,
+      "renterRate": 1
+    },
+    "2021": {
+      "ownerBurdened": 15,
+      "ownerTotal": 445,
+      "ownerRate": 0.0337,
+      "renterBurdened": 4,
+      "renterTotal": 60,
+      "renterRate": 0.0667
+    }
+  },
+  "University of California-Santa Barbara": {
+    "2017": {
+      "ownerBurdened": 4,
+      "ownerTotal": 4,
+      "ownerRate": 1,
+      "renterBurdened": 65,
+      "renterTotal": 70,
+      "renterRate": 0.9286
+    },
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 80,
+      "renterTotal": 95,
+      "renterRate": 0.8421
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 95,
+      "renterTotal": 165,
+      "renterRate": 0.5758
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 0,
+      "renterTotal": 120,
+      "renterRate": 0
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 130,
+      "ownerRate": 0,
+      "renterBurdened": 0,
+      "renterTotal": 120,
+      "renterRate": 0
+    }
+  },
+  "Vandenberg AFB": {
+    "2017": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 20,
+      "renterTotal": 30,
+      "renterRate": 0.6667
+    },
+    "2018": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 245,
+      "renterTotal": 255,
+      "renterRate": 0.9608
+    },
+    "2019": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 365,
+      "renterTotal": 395,
+      "renterRate": 0.9241
+    },
+    "2020": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 150,
+      "renterTotal": 205,
+      "renterRate": 0.7317
+    },
+    "2021": {
+      "ownerBurdened": 0,
+      "ownerTotal": 0,
+      "ownerRate": null,
+      "renterBurdened": 40,
+      "renterTotal": 215,
+      "renterRate": 0.186
+    }
+  },
+  "Vandenberg Village": {
+    "2017": {
+      "ownerBurdened": 220,
+      "ownerTotal": 235,
+      "ownerRate": 0.9362,
+      "renterBurdened": 35,
+      "renterTotal": 55,
+      "renterRate": 0.6364
+    },
+    "2018": {
+      "ownerBurdened": 65,
+      "ownerTotal": 135,
+      "ownerRate": 0.4815,
+      "renterBurdened": 65,
+      "renterTotal": 65,
+      "renterRate": 1
+    },
+    "2019": {
+      "ownerBurdened": 125,
+      "ownerTotal": 245,
+      "ownerRate": 0.5102,
+      "renterBurdened": 135,
+      "renterTotal": 135,
+      "renterRate": 1
+    },
+    "2020": {
+      "ownerBurdened": 165,
+      "ownerTotal": 270,
+      "ownerRate": 0.6111,
+      "renterBurdened": 35,
+      "renterTotal": 95,
+      "renterRate": 0.3684
+    },
+    "2021": {
+      "ownerBurdened": 35,
+      "ownerTotal": 1130,
+      "ownerRate": 0.031,
+      "renterBurdened": 0,
+      "renterTotal": 255,
+      "renterRate": 0
+    }
+  }
+}

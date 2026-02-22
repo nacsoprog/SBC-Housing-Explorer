@@ -1,0 +1,254 @@
+{
+  "Ballard": {
+    "totalVacant": 66,
+    "forRent": 0,
+    "forSaleOnly": 3,
+    "occupied": 180,
+    "overallRate": 0.2683,
+    "renterRate": 0,
+    "ownerRate": 0.0455
+  },
+  "Buellton": {
+    "totalVacant": 297,
+    "forRent": 18,
+    "forSaleOnly": 0,
+    "occupied": 1075,
+    "overallRate": 0.2165,
+    "renterRate": 0.0606,
+    "ownerRate": 0
+  },
+  "Carpinteria": {
+    "totalVacant": 921,
+    "forRent": 139,
+    "forSaleOnly": 50,
+    "occupied": 2425,
+    "overallRate": 0.2753,
+    "renterRate": 0.1509,
+    "ownerRate": 0.0543
+  },
+  "Casmalia": {
+    "totalVacant": 0,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 10,
+    "overallRate": 0,
+    "renterRate": null,
+    "ownerRate": null
+  },
+  "Cuyama": {
+    "totalVacant": 0,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 4,
+    "overallRate": 0,
+    "renterRate": null,
+    "ownerRate": null
+  },
+  "Eastern Goleta Valley": {
+    "totalVacant": 648,
+    "forRent": 106,
+    "forSaleOnly": 9,
+    "occupied": 7080,
+    "overallRate": 0.0839,
+    "renterRate": 0.1636,
+    "ownerRate": 0.0139
+  },
+  "Garey": {
+    "totalVacant": 0,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 15,
+    "overallRate": 0,
+    "renterRate": null,
+    "ownerRate": null
+  },
+  "Goleta": {
+    "totalVacant": 592,
+    "forRent": 155,
+    "forSaleOnly": 142,
+    "occupied": 6775,
+    "overallRate": 0.0804,
+    "renterRate": 0.2618,
+    "ownerRate": 0.2399
+  },
+  "Guadalupe": {
+    "totalVacant": 143,
+    "forRent": 22,
+    "forSaleOnly": 0,
+    "occupied": 565,
+    "overallRate": 0.202,
+    "renterRate": 0.1538,
+    "ownerRate": 0
+  },
+  "Isla Vista": {
+    "totalVacant": 577,
+    "forRent": 140,
+    "forSaleOnly": 0,
+    "occupied": 300,
+    "overallRate": 0.6579,
+    "renterRate": 0.2426,
+    "ownerRate": 0
+  },
+  "Lompoc": {
+    "totalVacant": 627,
+    "forRent": 340,
+    "forSaleOnly": 0,
+    "occupied": 3915,
+    "overallRate": 0.138,
+    "renterRate": 0.5423,
+    "ownerRate": 0
+  },
+  "Los Alamos": {
+    "totalVacant": 128,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 245,
+    "overallRate": 0.3432,
+    "renterRate": 0,
+    "ownerRate": 0
+  },
+  "Los Olivos": {
+    "totalVacant": 47,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 235,
+    "overallRate": 0.1667,
+    "renterRate": 0,
+    "ownerRate": 0
+  },
+  "Mission Canyon": {
+    "totalVacant": 107,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 690,
+    "overallRate": 0.1343,
+    "renterRate": 0,
+    "ownerRate": 0
+  },
+  "Mission Hills": {
+    "totalVacant": 0,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 665,
+    "overallRate": 0,
+    "renterRate": null,
+    "ownerRate": null
+  },
+  "Montecito": {
+    "totalVacant": 798,
+    "forRent": 37,
+    "forSaleOnly": 41,
+    "occupied": 2455,
+    "overallRate": 0.2453,
+    "renterRate": 0.0464,
+    "ownerRate": 0.0514
+  },
+  "New Cuyama": {
+    "totalVacant": 87,
+    "forRent": 0,
+    "forSaleOnly": 22,
+    "occupied": 75,
+    "overallRate": 0.537,
+    "renterRate": 0,
+    "ownerRate": 0.2529
+  },
+  "Orcutt": {
+    "totalVacant": 393,
+    "forRent": 97,
+    "forSaleOnly": 27,
+    "occupied": 6325,
+    "overallRate": 0.0585,
+    "renterRate": 0.2468,
+    "ownerRate": 0.0687
+  },
+  "Santa Barbara": {
+    "totalVacant": 2397,
+    "forRent": 473,
+    "forSaleOnly": 93,
+    "occupied": 19685,
+    "overallRate": 0.1085,
+    "renterRate": 0.1973,
+    "ownerRate": 0.0388
+  },
+  "Santa Maria": {
+    "totalVacant": 1120,
+    "forRent": 520,
+    "forSaleOnly": 112,
+    "occupied": 9440,
+    "overallRate": 0.1061,
+    "renterRate": 0.4643,
+    "ownerRate": 0.1
+  },
+  "Santa Ynez": {
+    "totalVacant": 206,
+    "forRent": 0,
+    "forSaleOnly": 9,
+    "occupied": 1115,
+    "overallRate": 0.1559,
+    "renterRate": 0,
+    "ownerRate": 0.0437
+  },
+  "Sisquoc": {
+    "totalVacant": 0,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 30,
+    "overallRate": 0,
+    "renterRate": null,
+    "ownerRate": null
+  },
+  "Solvang": {
+    "totalVacant": 93,
+    "forRent": 0,
+    "forSaleOnly": 0,
+    "occupied": 1415,
+    "overallRate": 0.0617,
+    "renterRate": 0,
+    "ownerRate": 0
+  },
+  "Summerland": {
+    "totalVacant": 197,
+    "forRent": 79,
+    "forSaleOnly": 0,
+    "occupied": 255,
+    "overallRate": 0.4358,
+    "renterRate": 0.401,
+    "ownerRate": 0
+  },
+  "Toro Canyon": {
+    "totalVacant": 257,
+    "forRent": 37,
+    "forSaleOnly": 0,
+    "occupied": 505,
+    "overallRate": 0.3373,
+    "renterRate": 0.144,
+    "ownerRate": 0
+  },
+  "University of California-Santa Barbara": {
+    "totalVacant": 49,
+    "forRent": 27,
+    "forSaleOnly": 0,
+    "occupied": 250,
+    "overallRate": 0.1639,
+    "renterRate": 0.551,
+    "ownerRate": 0
+  },
+  "Vandenberg AFB": {
+    "totalVacant": 13,
+    "forRent": 13,
+    "forSaleOnly": 0,
+    "occupied": 215,
+    "overallRate": 0.057,
+    "renterRate": 1,
+    "ownerRate": 0
+  },
+  "Vandenberg Village": {
+    "totalVacant": 135,
+    "forRent": 0,
+    "forSaleOnly": 135,
+    "occupied": 1385,
+    "overallRate": 0.0888,
+    "renterRate": 0,
+    "ownerRate": 1
+  }
+}

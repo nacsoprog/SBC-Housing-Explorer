@@ -1,0 +1,886 @@
+{
+  "Ballard": {
+    "total": 292,
+    "modes": {
+      "Drove Alone": 176,
+      "Carpool": 18,
+      "Transit": 0,
+      "Walked": 9,
+      "Other": 34,
+      "Work from Home": 55
+    },
+    "pcts": {
+      "Drove Alone": 0.6027397260273972,
+      "Carpool": 0.06164383561643835,
+      "Transit": 0,
+      "Walked": 0.030821917808219176,
+      "Other": 0.11643835616438356,
+      "Work from Home": 0.18835616438356165
+    },
+    "wfhPct": 0.19,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 58,
+      "2 vehicles": 76,
+      "3+ vehicles": 158
+    }
+  },
+  "Buellton": {
+    "total": 2954,
+    "modes": {
+      "Drove Alone": 2221,
+      "Carpool": 288,
+      "Transit": 39,
+      "Walked": 30,
+      "Other": 63,
+      "Work from Home": 313
+    },
+    "pcts": {
+      "Drove Alone": 0.7518618821936357,
+      "Carpool": 0.0974949221394719,
+      "Transit": 0.013202437373053487,
+      "Walked": 0.010155721056194989,
+      "Other": 0.02132701421800948,
+      "Work from Home": 0.10595802301963439
+    },
+    "wfhPct": 0.11,
+    "vehicles": {
+      "No vehicle": 17,
+      "1 vehicle": 569,
+      "2 vehicles": 1155,
+      "3+ vehicles": 1213
+    }
+  },
+  "Carpinteria": {
+    "total": 6495,
+    "modes": {
+      "Drove Alone": 4106,
+      "Carpool": 675,
+      "Transit": 177,
+      "Walked": 404,
+      "Other": 214,
+      "Work from Home": 919
+    },
+    "pcts": {
+      "Drove Alone": 0.6321785989222479,
+      "Carpool": 0.10392609699769054,
+      "Transit": 0.02725173210161663,
+      "Walked": 0.062201693610469594,
+      "Other": 0.03294842186297152,
+      "Work from Home": 0.14149345650500386
+    },
+    "wfhPct": 0.14,
+    "vehicles": {
+      "No vehicle": 46,
+      "1 vehicle": 1280,
+      "2 vehicles": 2820,
+      "3+ vehicles": 2349
+    }
+  },
+  "Casmalia": {
+    "total": 30,
+    "modes": {
+      "Drove Alone": 0,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 30
+    },
+    "pcts": {
+      "Drove Alone": 0,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 1
+    },
+    "wfhPct": 1,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 30,
+      "2 vehicles": 0,
+      "3+ vehicles": 0
+    }
+  },
+  "Cuyama": {
+    "total": 14,
+    "modes": {
+      "Drove Alone": 14,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "pcts": {
+      "Drove Alone": 1,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "wfhPct": null,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 0,
+      "2 vehicles": 0,
+      "3+ vehicles": 14
+    }
+  },
+  "Eastern Goleta Valley": {
+    "total": 12770,
+    "modes": {
+      "Drove Alone": 8230,
+      "Carpool": 848,
+      "Transit": 246,
+      "Walked": 268,
+      "Other": 579,
+      "Work from Home": 2599
+    },
+    "pcts": {
+      "Drove Alone": 0.6444792482380579,
+      "Carpool": 0.06640563821456538,
+      "Transit": 0.019263899765074394,
+      "Walked": 0.020986687548942836,
+      "Other": 0.04534064212999217,
+      "Work from Home": 0.20352388410336728
+    },
+    "wfhPct": 0.2,
+    "vehicles": {
+      "No vehicle": 221,
+      "1 vehicle": 1736,
+      "2 vehicles": 5262,
+      "3+ vehicles": 5551
+    }
+  },
+  "Garey": {
+    "total": 22,
+    "modes": {
+      "Drove Alone": 22,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "pcts": {
+      "Drove Alone": 1,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "wfhPct": null,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 12,
+      "2 vehicles": 0,
+      "3+ vehicles": 10
+    }
+  },
+  "Goleta": {
+    "total": 17526,
+    "modes": {
+      "Drove Alone": 10816,
+      "Carpool": 1835,
+      "Transit": 418,
+      "Walked": 460,
+      "Other": 870,
+      "Work from Home": 3127
+    },
+    "pcts": {
+      "Drove Alone": 0.6171402487732511,
+      "Carpool": 0.10470158621476663,
+      "Transit": 0.02385027958461714,
+      "Walked": 0.026246719160104987,
+      "Other": 0.04964053406367682,
+      "Work from Home": 0.17842063220358326
+    },
+    "wfhPct": 0.18,
+    "vehicles": {
+      "No vehicle": 361,
+      "1 vehicle": 3006,
+      "2 vehicles": 7032,
+      "3+ vehicles": 7127
+    }
+  },
+  "Guadalupe": {
+    "total": 2972,
+    "modes": {
+      "Drove Alone": 2327,
+      "Carpool": 462,
+      "Transit": 45,
+      "Walked": 48,
+      "Other": 9,
+      "Work from Home": 81
+    },
+    "pcts": {
+      "Drove Alone": 0.7829744279946165,
+      "Carpool": 0.15545087483176312,
+      "Transit": 0.015141318977119785,
+      "Walked": 0.016150740242261104,
+      "Other": 0.003028263795423957,
+      "Work from Home": 0.02725437415881561
+    },
+    "wfhPct": 0.03,
+    "vehicles": {
+      "No vehicle": 30,
+      "1 vehicle": 501,
+      "2 vehicles": 1153,
+      "3+ vehicles": 1288
+    }
+  },
+  "Isla Vista": {
+    "total": 5718,
+    "modes": {
+      "Drove Alone": 3037,
+      "Carpool": 278,
+      "Transit": 220,
+      "Walked": 918,
+      "Other": 868,
+      "Work from Home": 397
+    },
+    "pcts": {
+      "Drove Alone": 0.531129765652326,
+      "Carpool": 0.04861839804127317,
+      "Transit": 0.03847499125568381,
+      "Walked": 0.16054564533053514,
+      "Other": 0.15180132913606156,
+      "Work from Home": 0.06942987058412033
+    },
+    "wfhPct": 0.06,
+    "vehicles": {
+      "No vehicle": 650,
+      "1 vehicle": 1793,
+      "2 vehicles": 1411,
+      "3+ vehicles": 1864
+    }
+  },
+  "Lompoc": {
+    "total": 17672,
+    "modes": {
+      "Drove Alone": 11743,
+      "Carpool": 2998,
+      "Transit": 747,
+      "Walked": 745,
+      "Other": 378,
+      "Work from Home": 1061
+    },
+    "pcts": {
+      "Drove Alone": 0.6644975101856043,
+      "Carpool": 0.1696468990493436,
+      "Transit": 0.04227025803531009,
+      "Walked": 0.042157084653689454,
+      "Other": 0.021389769126301493,
+      "Work from Home": 0.06003847894975102
+    },
+    "wfhPct": 0.06,
+    "vehicles": {
+      "No vehicle": 848,
+      "1 vehicle": 3397,
+      "2 vehicles": 6077,
+      "3+ vehicles": 7350
+    }
+  },
+  "Los Alamos": {
+    "total": 367,
+    "modes": {
+      "Drove Alone": 190,
+      "Carpool": 88,
+      "Transit": 0,
+      "Walked": 11,
+      "Other": 0,
+      "Work from Home": 78
+    },
+    "pcts": {
+      "Drove Alone": 0.5177111716621253,
+      "Carpool": 0.23978201634877383,
+      "Transit": 0,
+      "Walked": 0.02997275204359673,
+      "Other": 0,
+      "Work from Home": 0.2125340599455041
+    },
+    "wfhPct": 0.2,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 81,
+      "2 vehicles": 218,
+      "3+ vehicles": 68
+    }
+  },
+  "Los Olivos": {
+    "total": 400,
+    "modes": {
+      "Drove Alone": 254,
+      "Carpool": 9,
+      "Transit": 0,
+      "Walked": 39,
+      "Other": 0,
+      "Work from Home": 98
+    },
+    "pcts": {
+      "Drove Alone": 0.635,
+      "Carpool": 0.0225,
+      "Transit": 0,
+      "Walked": 0.0975,
+      "Other": 0,
+      "Work from Home": 0.245
+    },
+    "wfhPct": 0.25,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 64,
+      "2 vehicles": 169,
+      "3+ vehicles": 167
+    }
+  },
+  "Mission Canyon": {
+    "total": 1124,
+    "modes": {
+      "Drove Alone": 597,
+      "Carpool": 37,
+      "Transit": 0,
+      "Walked": 43,
+      "Other": 20,
+      "Work from Home": 427
+    },
+    "pcts": {
+      "Drove Alone": 0.5311387900355872,
+      "Carpool": 0.03291814946619217,
+      "Transit": 0,
+      "Walked": 0.03825622775800712,
+      "Other": 0.017793594306049824,
+      "Work from Home": 0.3798932384341637
+    },
+    "wfhPct": 0.38,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 41,
+      "2 vehicles": 638,
+      "3+ vehicles": 445
+    }
+  },
+  "Mission Hills": {
+    "total": 1653,
+    "modes": {
+      "Drove Alone": 1096,
+      "Carpool": 186,
+      "Transit": 162,
+      "Walked": 49,
+      "Other": 18,
+      "Work from Home": 142
+    },
+    "pcts": {
+      "Drove Alone": 0.663036902601331,
+      "Carpool": 0.11252268602540835,
+      "Transit": 0.09800362976406533,
+      "Walked": 0.029643073200241985,
+      "Other": 0.010889292196007259,
+      "Work from Home": 0.08590441621294616
+    },
+    "wfhPct": 0.09,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 131,
+      "2 vehicles": 477,
+      "3+ vehicles": 1045
+    }
+  },
+  "Montecito": {
+    "total": 2758,
+    "modes": {
+      "Drove Alone": 1610,
+      "Carpool": 62,
+      "Transit": 0,
+      "Walked": 125,
+      "Other": 77,
+      "Work from Home": 884
+    },
+    "pcts": {
+      "Drove Alone": 0.583756345177665,
+      "Carpool": 0.022480058013052938,
+      "Transit": 0,
+      "Walked": 0.045322697606961566,
+      "Other": 0.027918781725888325,
+      "Work from Home": 0.3205221174764322
+    },
+    "wfhPct": 0.27,
+    "vehicles": {
+      "No vehicle": 24,
+      "1 vehicle": 460,
+      "2 vehicles": 1311,
+      "3+ vehicles": 963
+    }
+  },
+  "New Cuyama": {
+    "total": 183,
+    "modes": {
+      "Drove Alone": 148,
+      "Carpool": 13,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 2,
+      "Work from Home": 20
+    },
+    "pcts": {
+      "Drove Alone": 0.8087431693989071,
+      "Carpool": 0.07103825136612021,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0.01092896174863388,
+      "Work from Home": 0.1092896174863388
+    },
+    "wfhPct": 0.11,
+    "vehicles": {
+      "No vehicle": 4,
+      "1 vehicle": 24,
+      "2 vehicles": 73,
+      "3+ vehicles": 82
+    }
+  },
+  "Orcutt": {
+    "total": 13978,
+    "modes": {
+      "Drove Alone": 10917,
+      "Carpool": 1165,
+      "Transit": 287,
+      "Walked": 119,
+      "Other": 304,
+      "Work from Home": 1186
+    },
+    "pcts": {
+      "Drove Alone": 0.781013020460724,
+      "Carpool": 0.08334525683216483,
+      "Transit": 0.02053226498783803,
+      "Walked": 0.00851337816568894,
+      "Other": 0.02174846186865074,
+      "Work from Home": 0.08484761768493347
+    },
+    "wfhPct": 0.08,
+    "vehicles": {
+      "No vehicle": 391,
+      "1 vehicle": 1448,
+      "2 vehicles": 5122,
+      "3+ vehicles": 7017
+    }
+  },
+  "Santa Barbara": {
+    "total": 44711,
+    "modes": {
+      "Drove Alone": 27443,
+      "Carpool": 4339,
+      "Transit": 985,
+      "Walked": 1836,
+      "Other": 2486,
+      "Work from Home": 7622
+    },
+    "pcts": {
+      "Drove Alone": 0.613786316566393,
+      "Carpool": 0.09704546979490505,
+      "Transit": 0.022030372838898703,
+      "Walked": 0.04106372033727718,
+      "Other": 0.05560152982487531,
+      "Work from Home": 0.1704725906376507
+    },
+    "wfhPct": 0.17,
+    "vehicles": {
+      "No vehicle": 1742,
+      "1 vehicle": 11605,
+      "2 vehicles": 18359,
+      "3+ vehicles": 13005
+    }
+  },
+  "Santa Maria": {
+    "total": 47468,
+    "modes": {
+      "Drove Alone": 34148,
+      "Carpool": 8961,
+      "Transit": 773,
+      "Walked": 551,
+      "Other": 537,
+      "Work from Home": 2498
+    },
+    "pcts": {
+      "Drove Alone": 0.7193899047779557,
+      "Carpool": 0.18877980955591134,
+      "Transit": 0.016284654925423442,
+      "Walked": 0.011607820005056039,
+      "Other": 0.011312884469537373,
+      "Work from Home": 0.05262492626611612
+    },
+    "wfhPct": 0.05,
+    "vehicles": {
+      "No vehicle": 1147,
+      "1 vehicle": 6046,
+      "2 vehicles": 15784,
+      "3+ vehicles": 24491
+    }
+  },
+  "Santa Ynez": {
+    "total": 2163,
+    "modes": {
+      "Drove Alone": 1597,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 44,
+      "Other": 7,
+      "Work from Home": 515
+    },
+    "pcts": {
+      "Drove Alone": 0.7383263985205732,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0.02034211742949607,
+      "Other": 0.003236245954692557,
+      "Work from Home": 0.23809523809523808
+    },
+    "wfhPct": 0.24,
+    "vehicles": {
+      "No vehicle": 8,
+      "1 vehicle": 195,
+      "2 vehicles": 539,
+      "3+ vehicles": 1421
+    }
+  },
+  "Sisquoc": {
+    "total": 78,
+    "modes": {
+      "Drove Alone": 52,
+      "Carpool": 26,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "pcts": {
+      "Drove Alone": 0.6666666666666666,
+      "Carpool": 0.3333333333333333,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0
+    },
+    "wfhPct": null,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 6,
+      "2 vehicles": 42,
+      "3+ vehicles": 30
+    }
+  },
+  "Solvang": {
+    "total": 3067,
+    "modes": {
+      "Drove Alone": 1903,
+      "Carpool": 278,
+      "Transit": 32,
+      "Walked": 222,
+      "Other": 46,
+      "Work from Home": 586
+    },
+    "pcts": {
+      "Drove Alone": 0.6204760352135638,
+      "Carpool": 0.09064232148679491,
+      "Transit": 0.010433648516465601,
+      "Walked": 0.0723834365829801,
+      "Other": 0.014998369742419302,
+      "Work from Home": 0.19106618845777634
+    },
+    "wfhPct": 0.19,
+    "vehicles": {
+      "No vehicle": 52,
+      "1 vehicle": 534,
+      "2 vehicles": 1112,
+      "3+ vehicles": 1369
+    }
+  },
+  "Summerland": {
+    "total": 494,
+    "modes": {
+      "Drove Alone": 247,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 247
+    },
+    "pcts": {
+      "Drove Alone": 0.5,
+      "Carpool": 0,
+      "Transit": 0,
+      "Walked": 0,
+      "Other": 0,
+      "Work from Home": 0.5
+    },
+    "wfhPct": 0.5,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 44,
+      "2 vehicles": 93,
+      "3+ vehicles": 357
+    }
+  },
+  "Toro Canyon": {
+    "total": 713,
+    "modes": {
+      "Drove Alone": 362,
+      "Carpool": 134,
+      "Transit": 0,
+      "Walked": 57,
+      "Other": 17,
+      "Work from Home": 143
+    },
+    "pcts": {
+      "Drove Alone": 0.5077138849929874,
+      "Carpool": 0.1879382889200561,
+      "Transit": 0,
+      "Walked": 0.07994389901823282,
+      "Other": 0.023842917251051893,
+      "Work from Home": 0.2005610098176718
+    },
+    "wfhPct": 0.2,
+    "vehicles": {
+      "No vehicle": 31,
+      "1 vehicle": 48,
+      "2 vehicles": 200,
+      "3+ vehicles": 434
+    }
+  },
+  "University of California-Santa Barbara": {
+    "total": 1080,
+    "modes": {
+      "Drove Alone": 247,
+      "Carpool": 105,
+      "Transit": 18,
+      "Walked": 131,
+      "Other": 235,
+      "Work from Home": 344
+    },
+    "pcts": {
+      "Drove Alone": 0.22870370370370371,
+      "Carpool": 0.09722222222222222,
+      "Transit": 0.016666666666666666,
+      "Walked": 0.12129629629629629,
+      "Other": 0.2175925925925926,
+      "Work from Home": 0.31851851851851853
+    },
+    "wfhPct": 0.08,
+    "vehicles": {
+      "No vehicle": 29,
+      "1 vehicle": 541,
+      "2 vehicles": 452,
+      "3+ vehicles": 58
+    }
+  },
+  "Vandenberg AFB": {
+    "total": 1691,
+    "modes": {
+      "Drove Alone": 1322,
+      "Carpool": 131,
+      "Transit": 21,
+      "Walked": 27,
+      "Other": 69,
+      "Work from Home": 121
+    },
+    "pcts": {
+      "Drove Alone": 0.781785925487877,
+      "Carpool": 0.07746895328208162,
+      "Transit": 0.012418687167356593,
+      "Walked": 0.01596688350088705,
+      "Other": 0.04080425783560024,
+      "Work from Home": 0.07155529272619751
+    },
+    "wfhPct": 0.06,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 549,
+      "2 vehicles": 927,
+      "3+ vehicles": 215
+    }
+  },
+  "Vandenberg Village": {
+    "total": 3172,
+    "modes": {
+      "Drove Alone": 2604,
+      "Carpool": 225,
+      "Transit": 35,
+      "Walked": 76,
+      "Other": 35,
+      "Work from Home": 197
+    },
+    "pcts": {
+      "Drove Alone": 0.8209331651954602,
+      "Carpool": 0.07093316519546028,
+      "Transit": 0.011034047919293822,
+      "Walked": 0.02395964691046658,
+      "Other": 0.011034047919293822,
+      "Work from Home": 0.06210592686002522
+    },
+    "wfhPct": 0.06,
+    "vehicles": {
+      "No vehicle": 0,
+      "1 vehicle": 326,
+      "2 vehicles": 920,
+      "3+ vehicles": 1926
+    }
+  },
+  "Santa Barbara County": {
+    "total": 197662,
+    "modes": {
+      "Drove Alone": 131398,
+      "Carpool": 23794,
+      "Transit": 4230,
+      "Walked": 6523,
+      "Other": 7021,
+      "Work from Home": 24696
+    },
+    "pcts": {
+      "Drove Alone": 0.6647610567534478,
+      "Carpool": 0.12037720957999008,
+      "Transit": 0.021400167963493234,
+      "Walked": 0.03300077910776983,
+      "Other": 0.03552023150630875,
+      "Work from Home": 0.1249405550889903
+    },
+    "wfhPct": 0.12,
+    "vehicles": {
+      "No vehicle": 5724,
+      "1 vehicle": 35147,
+      "2 vehicles": 73836,
+      "3+ vehicles": 82955
+    }
+  },
+  "Santa Barbara County (Northwest)--Santa Maria City & Orcutt PUMA": {
+    "total": 57677,
+    "modes": {
+      "Drove Alone": 42092,
+      "Carpool": 9845,
+      "Transit": 986,
+      "Walked": 717,
+      "Other": 820,
+      "Work from Home": 3217
+    },
+    "pcts": {
+      "Drove Alone": 0.7297883038299495,
+      "Carpool": 0.17069195693257277,
+      "Transit": 0.017095202593754875,
+      "Walked": 0.012431298437852177,
+      "Other": 0.014217105605353953,
+      "Work from Home": 0.05577613260051667
+    },
+    "wfhPct": 0.06,
+    "vehicles": {
+      "No vehicle": 1488,
+      "1 vehicle": 7203,
+      "2 vehicles": 20119,
+      "3+ vehicles": 28867
+    }
+  },
+  "Santa Barbara County (North)--Lompoc, Guadalupe, Solvang & Buellton Cities PUMA": {
+    "total": 45538,
+    "modes": {
+      "Drove Alone": 31807,
+      "Carpool": 5644,
+      "Transit": 1171,
+      "Walked": 1482,
+      "Other": 795,
+      "Work from Home": 4639
+    },
+    "pcts": {
+      "Drove Alone": 0.6984716061311432,
+      "Carpool": 0.12394044534235145,
+      "Transit": 0.02571478764987483,
+      "Walked": 0.032544248759277965,
+      "Other": 0.017457947208924414,
+      "Work from Home": 0.10187096490842813
+    },
+    "wfhPct": 0.1,
+    "vehicles": {
+      "No vehicle": 1129,
+      "1 vehicle": 7124,
+      "2 vehicles": 15856,
+      "3+ vehicles": 21429
+    }
+  },
+  "Santa Barbara County--South Coast Region PUMA": {
+    "total": 94447,
+    "modes": {
+      "Drove Alone": 57499,
+      "Carpool": 8305,
+      "Transit": 2073,
+      "Walked": 4324,
+      "Other": 5406,
+      "Work from Home": 16840
+    },
+    "pcts": {
+      "Drove Alone": 0.6087964678602814,
+      "Carpool": 0.08793291475642424,
+      "Transit": 0.02194881785551685,
+      "Walked": 0.045782290596842676,
+      "Other": 0.05723845119485002,
+      "Work from Home": 0.1783010577360848
+    },
+    "wfhPct": 0.17,
+    "vehicles": {
+      "No vehicle": 3107,
+      "1 vehicle": 20820,
+      "2 vehicles": 37861,
+      "3+ vehicles": 32659
+    }
+  },
+  "North County (Santa Maria/Orcutt + Lompoc/Guadalupe/Solvang/Buellton PUMAs)": {
+    "total": 103215,
+    "modes": {
+      "Drove Alone": 73899,
+      "Carpool": 15489,
+      "Transit": 2157,
+      "Walked": 2199,
+      "Other": 1615,
+      "Work from Home": 7856
+    },
+    "pcts": {
+      "Drove Alone": 0.715971515768057,
+      "Carpool": 0.15006539747129777,
+      "Transit": 0.020898125272489465,
+      "Walked": 0.021305042871675627,
+      "Other": 0.01564695054013467,
+      "Work from Home": 0.07611296807634549
+    },
+    "wfhPct": 0.08,
+    "vehicles": {
+      "No vehicle": 2617,
+      "1 vehicle": 14327,
+      "2 vehicles": 35975,
+      "3+ vehicles": 50296
+    }
+  },
+  "South Coast (PUMA)": {
+    "total": 94447,
+    "modes": {
+      "Drove Alone": 57499,
+      "Carpool": 8305,
+      "Transit": 2073,
+      "Walked": 4324,
+      "Other": 5406,
+      "Work from Home": 16840
+    },
+    "pcts": {
+      "Drove Alone": 0.6087964678602814,
+      "Carpool": 0.08793291475642424,
+      "Transit": 0.02194881785551685,
+      "Walked": 0.045782290596842676,
+      "Other": 0.05723845119485002,
+      "Work from Home": 0.1783010577360848
+    },
+    "wfhPct": 0.17,
+    "vehicles": {
+      "No vehicle": 3107,
+      "1 vehicle": 20820,
+      "2 vehicles": 37861,
+      "3+ vehicles": 32659
+    }
+  }
+}

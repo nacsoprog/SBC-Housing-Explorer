@@ -1,0 +1,1282 @@
+{
+  "Ballard": {
+    "occupations": {
+      "Management & Business": 0.537,
+      "Service": 0.22399999999999998,
+      "Sales & Office": 0.092,
+      "Natural Resources & Construction": 0.048,
+      "Production & Transportation": 0.099
+    },
+    "industries": {
+      "Agriculture": 0.122,
+      "Construction": 0.027000000000000003,
+      "Manufacturing": 0.17300000000000001,
+      "Wholesale": null,
+      "Retail": 0.034,
+      "Transportation & Utilities": null,
+      "Information": 0.034,
+      "Finance & Real Estate": 0.15,
+      "Professional & Scientific": 0.129,
+      "Education & Healthcare": 0.16,
+      "Arts & Entertainment": 0.040999999999999995,
+      "Other Services": 0.078,
+      "Public Administration": 0.051
+    },
+    "laborForce": 0.545,
+    "employed": 0.513,
+    "unemployed": 0.031,
+    "wfhPct": 0.188,
+    "incomeBands": {
+      "<$10k": 0.11900000000000001,
+      "$10–15k": 0.031,
+      "$15–25k": 0.037000000000000005,
+      "$25–35k": 0.013999999999999999,
+      "$35–50k": 0.065,
+      "$50–75k": 0.122,
+      "$75–100k": 0.061,
+      "$100–150k": 0.19699999999999998,
+      "$150–200k": 0.095,
+      "$200k+": 0.259
+    }
+  },
+  "Buellton": {
+    "occupations": {
+      "Management & Business": 0.335,
+      "Service": 0.244,
+      "Sales & Office": 0.218,
+      "Natural Resources & Construction": 0.094,
+      "Production & Transportation": 0.109
+    },
+    "industries": {
+      "Agriculture": 0.028999999999999998,
+      "Construction": 0.064,
+      "Manufacturing": 0.06,
+      "Wholesale": null,
+      "Retail": 0.075,
+      "Transportation & Utilities": 0.047,
+      "Information": 0.027999999999999997,
+      "Finance & Real Estate": 0.024,
+      "Professional & Scientific": 0.063,
+      "Education & Healthcare": 0.33,
+      "Arts & Entertainment": 0.139,
+      "Other Services": 0.027999999999999997,
+      "Public Administration": 0.113
+    },
+    "laborForce": 0.7609999999999999,
+    "employed": 0.737,
+    "unemployed": 0.02,
+    "wfhPct": 0.106,
+    "incomeBands": {
+      "<$10k": 0.009000000000000001,
+      "$10–15k": 0.009000000000000001,
+      "$15–25k": 0.033,
+      "$25–35k": 0.046,
+      "$35–50k": 0.07400000000000001,
+      "$50–75k": 0.17,
+      "$75–100k": 0.17600000000000002,
+      "$100–150k": 0.207,
+      "$150–200k": 0.156,
+      "$200k+": 0.12
+    }
+  },
+  "Carpinteria": {
+    "occupations": {
+      "Management & Business": 0.446,
+      "Service": 0.19899999999999998,
+      "Sales & Office": 0.146,
+      "Natural Resources & Construction": 0.12,
+      "Production & Transportation": 0.08800000000000001
+    },
+    "industries": {
+      "Agriculture": 0.073,
+      "Construction": 0.079,
+      "Manufacturing": 0.094,
+      "Wholesale": 0.019,
+      "Retail": 0.081,
+      "Transportation & Utilities": 0.024,
+      "Information": 0.032,
+      "Finance & Real Estate": 0.045,
+      "Professional & Scientific": 0.168,
+      "Education & Healthcare": 0.24100000000000002,
+      "Arts & Entertainment": 0.051,
+      "Other Services": 0.063,
+      "Public Administration": 0.03
+    },
+    "laborForce": 0.66,
+    "employed": 0.628,
+    "unemployed": 0.032,
+    "wfhPct": 0.142,
+    "incomeBands": {
+      "<$10k": 0.02,
+      "$10–15k": 0.02,
+      "$15–25k": 0.042,
+      "$25–35k": 0.06,
+      "$35–50k": 0.095,
+      "$50–75k": 0.109,
+      "$75–100k": 0.147,
+      "$100–150k": 0.151,
+      "$150–200k": 0.11699999999999999,
+      "$200k+": 0.23800000000000002
+    }
+  },
+  "Casmalia": {
+    "occupations": {
+      "Management & Business": null,
+      "Service": 1,
+      "Sales & Office": null,
+      "Natural Resources & Construction": null,
+      "Production & Transportation": null
+    },
+    "industries": {
+      "Agriculture": 1,
+      "Construction": null,
+      "Manufacturing": null,
+      "Wholesale": null,
+      "Retail": null,
+      "Transportation & Utilities": null,
+      "Information": null,
+      "Finance & Real Estate": null,
+      "Professional & Scientific": null,
+      "Education & Healthcare": null,
+      "Arts & Entertainment": null,
+      "Other Services": null,
+      "Public Administration": null
+    },
+    "laborForce": 0.337,
+    "employed": 0.337,
+    "unemployed": null,
+    "wfhPct": 1,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": 0.136,
+      "$15–25k": null,
+      "$25–35k": 0.455,
+      "$35–50k": null,
+      "$50–75k": null,
+      "$75–100k": 0.409,
+      "$100–150k": null,
+      "$150–200k": null,
+      "$200k+": null
+    }
+  },
+  "Cuyama": {
+    "occupations": {
+      "Management & Business": null,
+      "Service": 0.667,
+      "Sales & Office": 0.16699999999999998,
+      "Natural Resources & Construction": 0.16699999999999998,
+      "Production & Transportation": null
+    },
+    "industries": {
+      "Agriculture": null,
+      "Construction": 0.16699999999999998,
+      "Manufacturing": null,
+      "Wholesale": null,
+      "Retail": 0.16699999999999998,
+      "Transportation & Utilities": null,
+      "Information": null,
+      "Finance & Real Estate": null,
+      "Professional & Scientific": null,
+      "Education & Healthcare": 0.444,
+      "Arts & Entertainment": 0.222,
+      "Other Services": null,
+      "Public Administration": null
+    },
+    "laborForce": 0.7829999999999999,
+    "employed": 0.7829999999999999,
+    "unemployed": null,
+    "wfhPct": null,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": null,
+      "$15–25k": null,
+      "$25–35k": null,
+      "$35–50k": null,
+      "$50–75k": null,
+      "$75–100k": null,
+      "$100–150k": 0.5710000000000001,
+      "$150–200k": null,
+      "$200k+": 0.429
+    }
+  },
+  "Eastern Goleta Valley": {
+    "occupations": {
+      "Management & Business": 0.521,
+      "Service": 0.141,
+      "Sales & Office": 0.21100000000000002,
+      "Natural Resources & Construction": 0.066,
+      "Production & Transportation": 0.062
+    },
+    "industries": {
+      "Agriculture": 0.011000000000000001,
+      "Construction": 0.086,
+      "Manufacturing": 0.076,
+      "Wholesale": 0.013000000000000001,
+      "Retail": 0.1,
+      "Transportation & Utilities": 0.034,
+      "Information": 0.032,
+      "Finance & Real Estate": 0.065,
+      "Professional & Scientific": 0.155,
+      "Education & Healthcare": 0.266,
+      "Arts & Entertainment": 0.07200000000000001,
+      "Other Services": 0.045,
+      "Public Administration": 0.045
+    },
+    "laborForce": 0.5710000000000001,
+    "employed": 0.544,
+    "unemployed": 0.026000000000000002,
+    "wfhPct": 0.205,
+    "incomeBands": {
+      "<$10k": 0.039,
+      "$10–15k": 0.013999999999999999,
+      "$15–25k": 0.03,
+      "$25–35k": 0.031,
+      "$35–50k": 0.047,
+      "$50–75k": 0.096,
+      "$75–100k": 0.085,
+      "$100–150k": 0.20199999999999999,
+      "$150–200k": 0.15,
+      "$200k+": 0.306
+    }
+  },
+  "Garey": {
+    "occupations": {
+      "Management & Business": 0.045,
+      "Service": 0.136,
+      "Sales & Office": 0.136,
+      "Natural Resources & Construction": 0.136,
+      "Production & Transportation": 0.545
+    },
+    "industries": {
+      "Agriculture": null,
+      "Construction": 0.136,
+      "Manufacturing": null,
+      "Wholesale": null,
+      "Retail": 0.136,
+      "Transportation & Utilities": 0.364,
+      "Information": null,
+      "Finance & Real Estate": null,
+      "Professional & Scientific": null,
+      "Education & Healthcare": 0.045,
+      "Arts & Entertainment": 0.182,
+      "Other Services": 0.136,
+      "Public Administration": null
+    },
+    "laborForce": 0.763,
+    "employed": 0.579,
+    "unemployed": 0.184,
+    "wfhPct": null,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": null,
+      "$15–25k": null,
+      "$25–35k": null,
+      "$35–50k": 0.136,
+      "$50–75k": null,
+      "$75–100k": 0.045,
+      "$100–150k": 0.318,
+      "$150–200k": 0.5,
+      "$200k+": null
+    }
+  },
+  "Goleta": {
+    "occupations": {
+      "Management & Business": 0.556,
+      "Service": 0.17,
+      "Sales & Office": 0.151,
+      "Natural Resources & Construction": 0.054000000000000006,
+      "Production & Transportation": 0.07
+    },
+    "industries": {
+      "Agriculture": 0.008,
+      "Construction": 0.040999999999999995,
+      "Manufacturing": 0.096,
+      "Wholesale": 0.015,
+      "Retail": 0.08,
+      "Transportation & Utilities": 0.054000000000000006,
+      "Information": 0.028999999999999998,
+      "Finance & Real Estate": 0.059000000000000004,
+      "Professional & Scientific": 0.159,
+      "Education & Healthcare": 0.302,
+      "Arts & Entertainment": 0.079,
+      "Other Services": 0.054000000000000006,
+      "Public Administration": 0.025
+    },
+    "laborForce": 0.701,
+    "employed": 0.6709999999999999,
+    "unemployed": 0.03,
+    "wfhPct": 0.179,
+    "incomeBands": {
+      "<$10k": 0.037000000000000005,
+      "$10–15k": 0.019,
+      "$15–25k": 0.027999999999999997,
+      "$25–35k": 0.035,
+      "$35–50k": 0.057999999999999996,
+      "$50–75k": 0.13,
+      "$75–100k": 0.11199999999999999,
+      "$100–150k": 0.196,
+      "$150–200k": 0.159,
+      "$200k+": 0.226
+    }
+  },
+  "Guadalupe": {
+    "occupations": {
+      "Management & Business": 0.157,
+      "Service": 0.182,
+      "Sales & Office": 0.21600000000000003,
+      "Natural Resources & Construction": 0.309,
+      "Production & Transportation": 0.136
+    },
+    "industries": {
+      "Agriculture": 0.253,
+      "Construction": 0.079,
+      "Manufacturing": 0.092,
+      "Wholesale": 0.045,
+      "Retail": 0.071,
+      "Transportation & Utilities": 0.025,
+      "Information": 0.003,
+      "Finance & Real Estate": 0.059000000000000004,
+      "Professional & Scientific": 0.079,
+      "Education & Healthcare": 0.18899999999999997,
+      "Arts & Entertainment": 0.023,
+      "Other Services": 0.047,
+      "Public Administration": 0.033
+    },
+    "laborForce": 0.6609999999999999,
+    "employed": 0.583,
+    "unemployed": 0.079,
+    "wfhPct": 0.027000000000000003,
+    "incomeBands": {
+      "<$10k": 0.079,
+      "$10–15k": 0.044000000000000004,
+      "$15–25k": 0.061,
+      "$25–35k": 0.092,
+      "$35–50k": 0.071,
+      "$50–75k": 0.193,
+      "$75–100k": 0.14300000000000002,
+      "$100–150k": 0.14300000000000002,
+      "$150–200k": 0.094,
+      "$200k+": 0.081
+    }
+  },
+  "Isla Vista": {
+    "occupations": {
+      "Management & Business": 0.322,
+      "Service": 0.32299999999999995,
+      "Sales & Office": 0.21600000000000003,
+      "Natural Resources & Construction": 0.022000000000000002,
+      "Production & Transportation": 0.11599999999999999
+    },
+    "industries": {
+      "Agriculture": 0.002,
+      "Construction": 0.017,
+      "Manufacturing": 0.035,
+      "Wholesale": 0.002,
+      "Retail": 0.132,
+      "Transportation & Utilities": 0.03,
+      "Information": 0.037000000000000005,
+      "Finance & Real Estate": 0.006,
+      "Professional & Scientific": 0.054000000000000006,
+      "Education & Healthcare": 0.33,
+      "Arts & Entertainment": 0.3,
+      "Other Services": 0.034,
+      "Public Administration": 0.024
+    },
+    "laborForce": 0.594,
+    "employed": 0.49200000000000005,
+    "unemployed": 0.10099999999999999,
+    "wfhPct": 0.083,
+    "incomeBands": {
+      "<$10k": 0.27,
+      "$10–15k": 0.08800000000000001,
+      "$15–25k": 0.151,
+      "$25–35k": 0.113,
+      "$35–50k": 0.113,
+      "$50–75k": 0.138,
+      "$75–100k": 0.066,
+      "$100–150k": 0.040999999999999995,
+      "$150–200k": 0.006999999999999999,
+      "$200k+": 0.012
+    }
+  },
+  "Lompoc": {
+    "occupations": {
+      "Management & Business": 0.248,
+      "Service": 0.281,
+      "Sales & Office": 0.19,
+      "Natural Resources & Construction": 0.146,
+      "Production & Transportation": 0.135
+    },
+    "industries": {
+      "Agriculture": 0.062,
+      "Construction": 0.07400000000000001,
+      "Manufacturing": 0.084,
+      "Wholesale": 0.008,
+      "Retail": 0.128,
+      "Transportation & Utilities": 0.043,
+      "Information": 0.006,
+      "Finance & Real Estate": 0.019,
+      "Professional & Scientific": 0.125,
+      "Education & Healthcare": 0.192,
+      "Arts & Entertainment": 0.13699999999999998,
+      "Other Services": 0.042,
+      "Public Administration": 0.08
+    },
+    "laborForce": 0.595,
+    "employed": 0.546,
+    "unemployed": 0.04,
+    "wfhPct": 0.06,
+    "incomeBands": {
+      "<$10k": 0.049,
+      "$10–15k": 0.06,
+      "$15–25k": 0.054000000000000006,
+      "$25–35k": 0.076,
+      "$35–50k": 0.134,
+      "$50–75k": 0.168,
+      "$75–100k": 0.141,
+      "$100–150k": 0.195,
+      "$150–200k": 0.073,
+      "$200k+": 0.05
+    }
+  },
+  "Los Alamos": {
+    "occupations": {
+      "Management & Business": 0.215,
+      "Service": 0.155,
+      "Sales & Office": 0.42,
+      "Natural Resources & Construction": 0.115,
+      "Production & Transportation": 0.094
+    },
+    "industries": {
+      "Agriculture": null,
+      "Construction": 0.079,
+      "Manufacturing": 0.231,
+      "Wholesale": null,
+      "Retail": 0.26,
+      "Transportation & Utilities": null,
+      "Information": null,
+      "Finance & Real Estate": 0.042,
+      "Professional & Scientific": 0.094,
+      "Education & Healthcare": 0.039,
+      "Arts & Entertainment": 0.06,
+      "Other Services": 0.19399999999999998,
+      "Public Administration": null
+    },
+    "laborForce": 0.474,
+    "employed": 0.436,
+    "unemployed": 0.038,
+    "wfhPct": 0.215,
+    "incomeBands": {
+      "<$10k": 0.02,
+      "$10–15k": null,
+      "$15–25k": 0.018000000000000002,
+      "$25–35k": 0.09,
+      "$35–50k": 0.31,
+      "$50–75k": 0.151,
+      "$75–100k": 0.198,
+      "$100–150k": 0.069,
+      "$150–200k": 0.11199999999999999,
+      "$200k+": 0.033
+    }
+  },
+  "Los Olivos": {
+    "occupations": {
+      "Management & Business": 0.51,
+      "Service": 0.20199999999999999,
+      "Sales & Office": 0.17,
+      "Natural Resources & Construction": 0.037000000000000005,
+      "Production & Transportation": 0.081
+    },
+    "industries": {
+      "Agriculture": 0.017,
+      "Construction": 0.10099999999999999,
+      "Manufacturing": 0.165,
+      "Wholesale": null,
+      "Retail": 0.128,
+      "Transportation & Utilities": 0.022000000000000002,
+      "Information": 0.062,
+      "Finance & Real Estate": null,
+      "Professional & Scientific": 0.14,
+      "Education & Healthcare": 0.22699999999999998,
+      "Arts & Entertainment": 0.025,
+      "Other Services": 0.067,
+      "Public Administration": 0.047
+    },
+    "laborForce": 0.525,
+    "employed": 0.495,
+    "unemployed": 0.03,
+    "wfhPct": 0.245,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": 0.027999999999999997,
+      "$15–25k": 0.053,
+      "$25–35k": 0.04,
+      "$35–50k": 0.027999999999999997,
+      "$50–75k": 0.113,
+      "$75–100k": 0.03,
+      "$100–150k": 0.256,
+      "$150–200k": 0.14800000000000002,
+      "$200k+": 0.304
+    }
+  },
+  "Mission Canyon": {
+    "occupations": {
+      "Management & Business": 0.615,
+      "Service": 0.129,
+      "Sales & Office": 0.154,
+      "Natural Resources & Construction": 0.017,
+      "Production & Transportation": 0.086
+    },
+    "industries": {
+      "Agriculture": 0.023,
+      "Construction": 0.011000000000000001,
+      "Manufacturing": 0.18100000000000002,
+      "Wholesale": 0.027000000000000003,
+      "Retail": 0.121,
+      "Transportation & Utilities": 0.055,
+      "Information": 0.024,
+      "Finance & Real Estate": 0.028999999999999998,
+      "Professional & Scientific": 0.155,
+      "Education & Healthcare": 0.159,
+      "Arts & Entertainment": 0.14800000000000002,
+      "Other Services": 0.039,
+      "Public Administration": 0.027999999999999997
+    },
+    "laborForce": 0.593,
+    "employed": 0.58,
+    "unemployed": 0.013000000000000001,
+    "wfhPct": 0.38,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": null,
+      "$15–25k": 0.035,
+      "$25–35k": null,
+      "$35–50k": 0.027999999999999997,
+      "$50–75k": 0.054000000000000006,
+      "$75–100k": 0.054000000000000006,
+      "$100–150k": 0.195,
+      "$150–200k": 0.069,
+      "$200k+": 0.5660000000000001
+    }
+  },
+  "Mission Hills": {
+    "occupations": {
+      "Management & Business": 0.456,
+      "Service": 0.263,
+      "Sales & Office": 0.128,
+      "Natural Resources & Construction": 0.095,
+      "Production & Transportation": 0.057
+    },
+    "industries": {
+      "Agriculture": 0.01,
+      "Construction": 0.049,
+      "Manufacturing": 0.062,
+      "Wholesale": 0.065,
+      "Retail": 0.051,
+      "Transportation & Utilities": null,
+      "Information": 0.025,
+      "Finance & Real Estate": 0.084,
+      "Professional & Scientific": 0.134,
+      "Education & Healthcare": 0.265,
+      "Arts & Entertainment": 0.16399999999999998,
+      "Other Services": 0.032,
+      "Public Administration": 0.06
+    },
+    "laborForce": 0.631,
+    "employed": 0.603,
+    "unemployed": 0.027999999999999997,
+    "wfhPct": 0.086,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": 0.008,
+      "$15–25k": 0.04,
+      "$25–35k": 0.024,
+      "$35–50k": 0.10800000000000001,
+      "$50–75k": 0.157,
+      "$75–100k": 0.12,
+      "$100–150k": 0.29600000000000004,
+      "$150–200k": 0.092,
+      "$200k+": 0.154
+    }
+  },
+  "Montecito": {
+    "occupations": {
+      "Management & Business": 0.6709999999999999,
+      "Service": 0.113,
+      "Sales & Office": 0.175,
+      "Natural Resources & Construction": 0.019,
+      "Production & Transportation": 0.023
+    },
+    "industries": {
+      "Agriculture": 0.01,
+      "Construction": 0.055,
+      "Manufacturing": 0.039,
+      "Wholesale": 0.017,
+      "Retail": 0.054000000000000006,
+      "Transportation & Utilities": 0.019,
+      "Information": 0.028999999999999998,
+      "Finance & Real Estate": 0.134,
+      "Professional & Scientific": 0.203,
+      "Education & Healthcare": 0.287,
+      "Arts & Entertainment": 0.094,
+      "Other Services": 0.057999999999999996,
+      "Public Administration": 0.001
+    },
+    "laborForce": 0.452,
+    "employed": 0.433,
+    "unemployed": 0.019,
+    "wfhPct": 0.299,
+    "incomeBands": {
+      "<$10k": 0.03,
+      "$10–15k": 0.006,
+      "$15–25k": 0.05,
+      "$25–35k": 0.027999999999999997,
+      "$35–50k": 0.03,
+      "$50–75k": 0.062,
+      "$75–100k": 0.07200000000000001,
+      "$100–150k": 0.08,
+      "$150–200k": 0.091,
+      "$200k+": 0.552
+    }
+  },
+  "New Cuyama": {
+    "occupations": {
+      "Management & Business": 0.301,
+      "Service": 0.21899999999999997,
+      "Sales & Office": 0.040999999999999995,
+      "Natural Resources & Construction": 0.337,
+      "Production & Transportation": 0.102
+    },
+    "industries": {
+      "Agriculture": 0.24,
+      "Construction": 0.138,
+      "Manufacturing": 0.11699999999999999,
+      "Wholesale": null,
+      "Retail": 0.046,
+      "Transportation & Utilities": 0.01,
+      "Information": null,
+      "Finance & Real Estate": 0.02,
+      "Professional & Scientific": 0.08199999999999999,
+      "Education & Healthcare": 0.158,
+      "Arts & Entertainment": 0.128,
+      "Other Services": 0.051,
+      "Public Administration": 0.01
+    },
+    "laborForce": 0.528,
+    "employed": 0.47700000000000004,
+    "unemployed": 0.051,
+    "wfhPct": 0.109,
+    "incomeBands": {
+      "<$10k": 0.127,
+      "$10–15k": 0.08,
+      "$15–25k": null,
+      "$25–35k": 0.094,
+      "$35–50k": 0.071,
+      "$50–75k": 0.358,
+      "$75–100k": 0.061,
+      "$100–150k": 0.156,
+      "$150–200k": 0.052000000000000005,
+      "$200k+": null
+    }
+  },
+  "Orcutt": {
+    "occupations": {
+      "Management & Business": 0.418,
+      "Service": 0.135,
+      "Sales & Office": 0.23,
+      "Natural Resources & Construction": 0.14300000000000002,
+      "Production & Transportation": 0.075
+    },
+    "industries": {
+      "Agriculture": 0.047,
+      "Construction": 0.11699999999999999,
+      "Manufacturing": 0.081,
+      "Wholesale": 0.012,
+      "Retail": 0.111,
+      "Transportation & Utilities": 0.039,
+      "Information": 0.006,
+      "Finance & Real Estate": 0.063,
+      "Professional & Scientific": 0.08,
+      "Education & Healthcare": 0.225,
+      "Arts & Entertainment": 0.1,
+      "Other Services": 0.049,
+      "Public Administration": 0.07
+    },
+    "laborForce": 0.589,
+    "employed": 0.565,
+    "unemployed": 0.02,
+    "wfhPct": 0.086,
+    "incomeBands": {
+      "<$10k": 0.025,
+      "$10–15k": 0.015,
+      "$15–25k": 0.043,
+      "$25–35k": 0.051,
+      "$35–50k": 0.068,
+      "$50–75k": 0.174,
+      "$75–100k": 0.09300000000000001,
+      "$100–150k": 0.24,
+      "$150–200k": 0.136,
+      "$200k+": 0.155
+    }
+  },
+  "Santa Barbara": {
+    "occupations": {
+      "Management & Business": 0.49200000000000005,
+      "Service": 0.201,
+      "Sales & Office": 0.17600000000000002,
+      "Natural Resources & Construction": 0.063,
+      "Production & Transportation": 0.069
+    },
+    "industries": {
+      "Agriculture": 0.008,
+      "Construction": 0.057,
+      "Manufacturing": 0.055,
+      "Wholesale": 0.022000000000000002,
+      "Retail": 0.096,
+      "Transportation & Utilities": 0.027999999999999997,
+      "Information": 0.025,
+      "Finance & Real Estate": 0.061,
+      "Professional & Scientific": 0.19899999999999998,
+      "Education & Healthcare": 0.226,
+      "Arts & Entertainment": 0.14300000000000002,
+      "Other Services": 0.05,
+      "Public Administration": 0.03
+    },
+    "laborForce": 0.65,
+    "employed": 0.619,
+    "unemployed": 0.03,
+    "wfhPct": 0.17,
+    "incomeBands": {
+      "<$10k": 0.051,
+      "$10–15k": 0.03,
+      "$15–25k": 0.044000000000000004,
+      "$25–35k": 0.045,
+      "$35–50k": 0.08900000000000001,
+      "$50–75k": 0.125,
+      "$75–100k": 0.10800000000000001,
+      "$100–150k": 0.147,
+      "$150–200k": 0.122,
+      "$200k+": 0.239
+    }
+  },
+  "Santa Maria": {
+    "occupations": {
+      "Management & Business": 0.222,
+      "Service": 0.19699999999999998,
+      "Sales & Office": 0.153,
+      "Natural Resources & Construction": 0.28800000000000003,
+      "Production & Transportation": 0.14
+    },
+    "industries": {
+      "Agriculture": 0.231,
+      "Construction": 0.078,
+      "Manufacturing": 0.065,
+      "Wholesale": 0.027999999999999997,
+      "Retail": 0.098,
+      "Transportation & Utilities": 0.047,
+      "Information": 0.01,
+      "Finance & Real Estate": 0.024,
+      "Professional & Scientific": 0.073,
+      "Education & Healthcare": 0.17800000000000002,
+      "Arts & Entertainment": 0.086,
+      "Other Services": 0.037000000000000005,
+      "Public Administration": 0.046
+    },
+    "laborForce": 0.665,
+    "employed": 0.614,
+    "unemployed": 0.047,
+    "wfhPct": 0.053,
+    "incomeBands": {
+      "<$10k": 0.028999999999999998,
+      "$10–15k": 0.027999999999999997,
+      "$15–25k": 0.059000000000000004,
+      "$25–35k": 0.06,
+      "$35–50k": 0.11599999999999999,
+      "$50–75k": 0.157,
+      "$75–100k": 0.14,
+      "$100–150k": 0.225,
+      "$150–200k": 0.098,
+      "$200k+": 0.087
+    }
+  },
+  "Santa Ynez": {
+    "occupations": {
+      "Management & Business": 0.48700000000000004,
+      "Service": 0.23800000000000002,
+      "Sales & Office": 0.15,
+      "Natural Resources & Construction": 0.08900000000000001,
+      "Production & Transportation": 0.036000000000000004
+    },
+    "industries": {
+      "Agriculture": 0.07200000000000001,
+      "Construction": 0.066,
+      "Manufacturing": 0.07200000000000001,
+      "Wholesale": null,
+      "Retail": 0.07200000000000001,
+      "Transportation & Utilities": 0.036000000000000004,
+      "Information": 0.061,
+      "Finance & Real Estate": 0.11800000000000001,
+      "Professional & Scientific": 0.195,
+      "Education & Healthcare": 0.11199999999999999,
+      "Arts & Entertainment": 0.079,
+      "Other Services": 0.07,
+      "Public Administration": 0.046
+    },
+    "laborForce": 0.5579999999999999,
+    "employed": 0.5539999999999999,
+    "unemployed": 0.004,
+    "wfhPct": 0.23800000000000002,
+    "incomeBands": {
+      "<$10k": 0.055999999999999994,
+      "$10–15k": 0.06,
+      "$15–25k": 0.043,
+      "$25–35k": 0.001,
+      "$35–50k": 0.076,
+      "$50–75k": 0.059000000000000004,
+      "$75–100k": 0.07200000000000001,
+      "$100–150k": 0.20600000000000002,
+      "$150–200k": 0.142,
+      "$200k+": 0.285
+    }
+  },
+  "Sisquoc": {
+    "occupations": {
+      "Management & Business": 0.115,
+      "Service": 0.462,
+      "Sales & Office": 0.10300000000000001,
+      "Natural Resources & Construction": 0.128,
+      "Production & Transportation": 0.192
+    },
+    "industries": {
+      "Agriculture": 0.115,
+      "Construction": 0.128,
+      "Manufacturing": null,
+      "Wholesale": null,
+      "Retail": null,
+      "Transportation & Utilities": 0.077,
+      "Information": null,
+      "Finance & Real Estate": 0.051,
+      "Professional & Scientific": 0.115,
+      "Education & Healthcare": 0.141,
+      "Arts & Entertainment": 0.295,
+      "Other Services": 0.038,
+      "Public Administration": 0.038
+    },
+    "laborForce": 0.5379999999999999,
+    "employed": 0.494,
+    "unemployed": 0.044000000000000004,
+    "wfhPct": null,
+    "incomeBands": {
+      "<$10k": 0.081,
+      "$10–15k": 0.047,
+      "$15–25k": 0.233,
+      "$25–35k": 0.047,
+      "$35–50k": 0.057999999999999996,
+      "$50–75k": null,
+      "$75–100k": 0.244,
+      "$100–150k": 0.18600000000000003,
+      "$150–200k": 0.081,
+      "$200k+": 0.023
+    }
+  },
+  "Solvang": {
+    "occupations": {
+      "Management & Business": 0.46299999999999997,
+      "Service": 0.188,
+      "Sales & Office": 0.217,
+      "Natural Resources & Construction": 0.077,
+      "Production & Transportation": 0.055
+    },
+    "industries": {
+      "Agriculture": 0.023,
+      "Construction": 0.08,
+      "Manufacturing": 0.126,
+      "Wholesale": 0.008,
+      "Retail": 0.124,
+      "Transportation & Utilities": 0.022000000000000002,
+      "Information": 0.042,
+      "Finance & Real Estate": 0.061,
+      "Professional & Scientific": 0.102,
+      "Education & Healthcare": 0.124,
+      "Arts & Entertainment": 0.14400000000000002,
+      "Other Services": 0.092,
+      "Public Administration": 0.049
+    },
+    "laborForce": 0.614,
+    "employed": 0.597,
+    "unemployed": 0.017,
+    "wfhPct": 0.191,
+    "incomeBands": {
+      "<$10k": 0.019,
+      "$10–15k": 0.017,
+      "$15–25k": 0.023,
+      "$25–35k": 0.042,
+      "$35–50k": 0.05,
+      "$50–75k": 0.114,
+      "$75–100k": 0.163,
+      "$100–150k": 0.179,
+      "$150–200k": 0.126,
+      "$200k+": 0.266
+    }
+  },
+  "Summerland": {
+    "occupations": {
+      "Management & Business": 0.48200000000000004,
+      "Service": 0.135,
+      "Sales & Office": 0.253,
+      "Natural Resources & Construction": 0.13,
+      "Production & Transportation": null
+    },
+    "industries": {
+      "Agriculture": null,
+      "Construction": 0.171,
+      "Manufacturing": 0.067,
+      "Wholesale": null,
+      "Retail": 0.10099999999999999,
+      "Transportation & Utilities": null,
+      "Information": null,
+      "Finance & Real Estate": 0.019,
+      "Professional & Scientific": 0.24,
+      "Education & Healthcare": 0.187,
+      "Arts & Entertainment": 0.133,
+      "Other Services": 0.08199999999999999,
+      "Public Administration": null
+    },
+    "laborForce": 0.564,
+    "employed": 0.504,
+    "unemployed": 0.06,
+    "wfhPct": 0.5,
+    "incomeBands": {
+      "<$10k": null,
+      "$10–15k": 0.086,
+      "$15–25k": null,
+      "$25–35k": null,
+      "$35–50k": 0.19899999999999998,
+      "$50–75k": 0.083,
+      "$75–100k": 0.047,
+      "$100–150k": 0.154,
+      "$150–200k": 0.049,
+      "$200k+": 0.382
+    }
+  },
+  "Toro Canyon": {
+    "occupations": {
+      "Management & Business": 0.67,
+      "Service": 0.17600000000000002,
+      "Sales & Office": 0.091,
+      "Natural Resources & Construction": 0.063,
+      "Production & Transportation": null
+    },
+    "industries": {
+      "Agriculture": 0.008,
+      "Construction": 0.016,
+      "Manufacturing": 0.033,
+      "Wholesale": 0.18,
+      "Retail": 0.016,
+      "Transportation & Utilities": null,
+      "Information": 0.047,
+      "Finance & Real Estate": 0.065,
+      "Professional & Scientific": 0.369,
+      "Education & Healthcare": 0.214,
+      "Arts & Entertainment": 0.053,
+      "Other Services": null,
+      "Public Administration": null
+    },
+    "laborForce": 0.542,
+    "employed": 0.505,
+    "unemployed": 0.037000000000000005,
+    "wfhPct": 0.204,
+    "incomeBands": {
+      "<$10k": 0.02,
+      "$10–15k": 0.037000000000000005,
+      "$15–25k": 0.008,
+      "$25–35k": 0.040999999999999995,
+      "$35–50k": 0.096,
+      "$50–75k": 0.032,
+      "$75–100k": 0.059000000000000004,
+      "$100–150k": 0.183,
+      "$150–200k": 0.11199999999999999,
+      "$200k+": 0.41100000000000003
+    }
+  },
+  "University of California-Santa Barbara": {
+    "occupations": {
+      "Management & Business": 0.597,
+      "Service": 0.22699999999999998,
+      "Sales & Office": 0.133,
+      "Natural Resources & Construction": 0.02,
+      "Production & Transportation": 0.023
+    },
+    "industries": {
+      "Agriculture": 0.013000000000000001,
+      "Construction": 0.005,
+      "Manufacturing": 0.015,
+      "Wholesale": 0.004,
+      "Retail": 0.055,
+      "Transportation & Utilities": 0.013999999999999999,
+      "Information": 0.015,
+      "Finance & Real Estate": 0.005,
+      "Professional & Scientific": 0.054000000000000006,
+      "Education & Healthcare": 0.581,
+      "Arts & Entertainment": 0.207,
+      "Other Services": 0.026000000000000002,
+      "Public Administration": 0.006
+    },
+    "laborForce": 0.46399999999999997,
+    "employed": 0.396,
+    "unemployed": 0.067,
+    "wfhPct": 0.177,
+    "incomeBands": {
+      "<$10k": 0.03,
+      "$10–15k": 0.06,
+      "$15–25k": 0.016,
+      "$25–35k": 0.031,
+      "$35–50k": 0.17600000000000002,
+      "$50–75k": 0.188,
+      "$75–100k": 0.168,
+      "$100–150k": 0.11,
+      "$150–200k": 0.033,
+      "$200k+": 0.18899999999999997
+    }
+  },
+  "Vandenberg AFB": {
+    "occupations": {
+      "Management & Business": 0.374,
+      "Service": 0.42,
+      "Sales & Office": 0.185,
+      "Natural Resources & Construction": 0.021,
+      "Production & Transportation": null
+    },
+    "industries": {
+      "Agriculture": 0.01,
+      "Construction": 0.064,
+      "Manufacturing": 0.05,
+      "Wholesale": null,
+      "Retail": 0.145,
+      "Transportation & Utilities": 0.017,
+      "Information": 0.026000000000000002,
+      "Finance & Real Estate": 0.027999999999999997,
+      "Professional & Scientific": 0.095,
+      "Education & Healthcare": 0.325,
+      "Arts & Entertainment": 0.154,
+      "Other Services": 0.028999999999999998,
+      "Public Administration": 0.055
+    },
+    "laborForce": 0.777,
+    "employed": 0.218,
+    "unemployed": 0.013000000000000001,
+    "wfhPct": 0.069,
+    "incomeBands": {
+      "<$10k": 0.012,
+      "$10–15k": null,
+      "$15–25k": 0.01,
+      "$25–35k": 0.044000000000000004,
+      "$35–50k": 0.172,
+      "$50–75k": 0.21600000000000003,
+      "$75–100k": 0.266,
+      "$100–150k": 0.182,
+      "$150–200k": 0.044000000000000004,
+      "$200k+": 0.053
+    }
+  },
+  "Vandenberg Village": {
+    "occupations": {
+      "Management & Business": 0.415,
+      "Service": 0.141,
+      "Sales & Office": 0.213,
+      "Natural Resources & Construction": 0.132,
+      "Production & Transportation": 0.099
+    },
+    "industries": {
+      "Agriculture": 0.022000000000000002,
+      "Construction": 0.121,
+      "Manufacturing": 0.13,
+      "Wholesale": 0.027999999999999997,
+      "Retail": 0.081,
+      "Transportation & Utilities": 0.040999999999999995,
+      "Information": 0.01,
+      "Finance & Real Estate": 0.028999999999999998,
+      "Professional & Scientific": 0.092,
+      "Education & Healthcare": 0.22899999999999998,
+      "Arts & Entertainment": 0.07,
+      "Other Services": 0.042,
+      "Public Administration": 0.105
+    },
+    "laborForce": 0.6509999999999999,
+    "employed": 0.54,
+    "unemployed": 0.059000000000000004,
+    "wfhPct": 0.063,
+    "incomeBands": {
+      "<$10k": 0.011000000000000001,
+      "$10–15k": 0.032,
+      "$15–25k": 0.095,
+      "$25–35k": 0.017,
+      "$35–50k": 0.033,
+      "$50–75k": 0.146,
+      "$75–100k": 0.154,
+      "$100–150k": 0.185,
+      "$150–200k": 0.126,
+      "$200k+": 0.2
+    }
+  },
+  "Santa Barbara County": {
+    "occupations": {
+      "Management & Business": 0.39799999999999996,
+      "Service": 0.19699999999999998,
+      "Sales & Office": 0.175,
+      "Natural Resources & Construction": 0.136,
+      "Production & Transportation": 0.094
+    },
+    "industries": {
+      "Agriculture": 0.081,
+      "Construction": 0.068,
+      "Manufacturing": 0.071,
+      "Wholesale": 0.019,
+      "Retail": 0.096,
+      "Transportation & Utilities": 0.037000000000000005,
+      "Information": 0.019,
+      "Finance & Real Estate": 0.045,
+      "Professional & Scientific": 0.13,
+      "Education & Healthcare": 0.23,
+      "Arts & Entertainment": 0.11199999999999999,
+      "Other Services": 0.047,
+      "Public Administration": 0.043
+    },
+    "laborForce": 0.627,
+    "employed": 0.5820000000000001,
+    "unemployed": 0.038,
+    "wfhPct": 0.125,
+    "incomeBands": {
+      "<$10k": 0.045,
+      "$10–15k": 0.03,
+      "$15–25k": 0.048,
+      "$25–35k": 0.051,
+      "$35–50k": 0.09,
+      "$50–75k": 0.136,
+      "$75–100k": 0.11800000000000001,
+      "$100–150k": 0.18100000000000002,
+      "$150–200k": 0.114,
+      "$200k+": 0.187
+    }
+  },
+  "Santa Barbara County (Northwest)--Santa Maria City & Orcutt PUMA": {
+    "occupations": {
+      "Management & Business": 0.262,
+      "Service": 0.182,
+      "Sales & Office": 0.171,
+      "Natural Resources & Construction": 0.261,
+      "Production & Transportation": 0.12300000000000001
+    },
+    "industries": {
+      "Agriculture": 0.196,
+      "Construction": 0.08800000000000001,
+      "Manufacturing": 0.071,
+      "Wholesale": 0.023,
+      "Retail": 0.099,
+      "Transportation & Utilities": 0.042,
+      "Information": 0.009000000000000001,
+      "Finance & Real Estate": 0.033,
+      "Professional & Scientific": 0.07200000000000001,
+      "Education & Healthcare": 0.184,
+      "Arts & Entertainment": 0.08900000000000001,
+      "Other Services": 0.043,
+      "Public Administration": 0.051
+    },
+    "laborForce": 0.644,
+    "employed": 0.601,
+    "unemployed": 0.039,
+    "wfhPct": 0.055999999999999994,
+    "incomeBands": {
+      "<$10k": 0.03,
+      "$10–15k": 0.024,
+      "$15–25k": 0.057,
+      "$25–35k": 0.061,
+      "$35–50k": 0.10300000000000001,
+      "$50–75k": 0.16699999999999998,
+      "$75–100k": 0.132,
+      "$100–150k": 0.221,
+      "$150–200k": 0.10400000000000001,
+      "$200k+": 0.102
+    }
+  },
+  "Santa Barbara County (North)--Lompoc, Guadalupe, Solvang & Buellton Cities PUMA": {
+    "occupations": {
+      "Management & Business": 0.32799999999999996,
+      "Service": 0.231,
+      "Sales & Office": 0.187,
+      "Natural Resources & Construction": 0.14,
+      "Production & Transportation": 0.115
+    },
+    "industries": {
+      "Agriculture": 0.079,
+      "Construction": 0.076,
+      "Manufacturing": 0.087,
+      "Wholesale": 0.018000000000000002,
+      "Retail": 0.105,
+      "Transportation & Utilities": 0.040999999999999995,
+      "Information": 0.013999999999999999,
+      "Finance & Real Estate": 0.038,
+      "Professional & Scientific": 0.115,
+      "Education & Healthcare": 0.2,
+      "Arts & Entertainment": 0.111,
+      "Other Services": 0.048,
+      "Public Administration": 0.068
+    },
+    "laborForce": 0.622,
+    "employed": 0.556,
+    "unemployed": 0.039,
+    "wfhPct": 0.102,
+    "incomeBands": {
+      "<$10k": 0.037000000000000005,
+      "$10–15k": 0.038,
+      "$15–25k": 0.047,
+      "$25–35k": 0.053,
+      "$35–50k": 0.102,
+      "$50–75k": 0.146,
+      "$75–100k": 0.136,
+      "$100–150k": 0.201,
+      "$150–200k": 0.109,
+      "$200k+": 0.132
+    }
+  },
+  "Santa Barbara County--South Coast Region PUMA": {
+    "occupations": {
+      "Management & Business": 0.508,
+      "Service": 0.191,
+      "Sales & Office": 0.17300000000000001,
+      "Natural Resources & Construction": 0.061,
+      "Production & Transportation": 0.067
+    },
+    "industries": {
+      "Agriculture": 0.015,
+      "Construction": 0.054000000000000006,
+      "Manufacturing": 0.065,
+      "Wholesale": 0.018000000000000002,
+      "Retail": 0.09,
+      "Transportation & Utilities": 0.032,
+      "Information": 0.027000000000000003,
+      "Finance & Real Estate": 0.055999999999999994,
+      "Professional & Scientific": 0.17,
+      "Education & Healthcare": 0.271,
+      "Arts & Entertainment": 0.126,
+      "Other Services": 0.048,
+      "Public Administration": 0.027999999999999997
+    },
+    "laborForce": 0.62,
+    "employed": 0.5820000000000001,
+    "unemployed": 0.037000000000000005,
+    "wfhPct": 0.177,
+    "incomeBands": {
+      "<$10k": 0.055999999999999994,
+      "$10–15k": 0.027999999999999997,
+      "$15–25k": 0.045,
+      "$25–35k": 0.045,
+      "$35–50k": 0.079,
+      "$50–75k": 0.11599999999999999,
+      "$75–100k": 0.102,
+      "$100–150k": 0.152,
+      "$150–200k": 0.121,
+      "$200k+": 0.256
+    }
+  }
+}

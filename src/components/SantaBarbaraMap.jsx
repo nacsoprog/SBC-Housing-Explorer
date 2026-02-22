@@ -2,26 +2,58 @@ import React, { useState, useMemo } from 'react';
 import { ComposableMap, Geographies, Geography, ZoomableGroup, Annotation } from 'react-simple-maps';
 import { ZoomIn, ZoomOut, Search, X } from 'lucide-react';
 import { geoCentroid } from "d3-geo";
-import { scaleLinear } from 'd3-scale';
+import { scaleLinear, scaleLog } from 'd3-scale';
 import countyData from '../data/santa_barbara_county.json';
 import placesData from '../data/santa_barbara_places.json';
 import heatmapData from '../data/heatmap_data.json';
+import imsData from '../data/ims_data.json';
+import affordabilityData from '../data/affordability_data.json';
+import vacancyData from '../data/vacancy_data.json';
+import employmentData from '../data/employment_data.json';
+import commuteData from '../data/commuting_data.json';
+import MapTooltip from './MapTooltip';
 
-// Friction rate scale: 0 (easy to build) → 1 (very hard to build)
-// frictionRate = 1 - (COs / max(entitlements, permits, COs))
+// Friction rate scale: 0 (easy) → 1 (very hard)
 const colorScale = scaleLinear().domain([0, 0.25, 0.5, 0.75, 1]).range([
-    "#ffd1d6", // light fiery-orange pink (low friction = easy)
-    "#ffb0b9", // medium-light
-    "#ff828f", // medium
-    "#ff5a5f", // fiery-orange pink
-    "#e03c41"  // darker fiery-orange pink (high friction = hard)
+    "#ffd1d6", "#ffb0b9", "#ff828f", "#ff5a5f", "#e03c41"
 ]);
 
-// Helper to get region data from heatmapData
+// IMS color scale: log scale (IMS spans 0.002 → ~1675)
+// Using a teal-to-deep-purple ramp to distinguish from the friction layer
+const IMS_MIN = 0.01;
+const IMS_MAX = 2000;
+const imsColorScale = scaleLog().domain([IMS_MIN, IMS_MAX]).range(["#fde8c8", "#c75000"]).clamp(true);
+
+// Helper to get friction region data
 const getRegionData = (name) => {
     const d = heatmapData[name];
     if (!d || typeof d !== 'object') return null;
     if (d.frictionRate === null) return null;
+    return d;
+};
+
+// Helper to get IMS data for a given cycle key ('cycle5' or 'cycle6')
+const getImsData = (name, cycleKey) => {
+    const d = imsData[name];
+    if (!d || !d[cycleKey]) return null;
+    return d[cycleKey];
+};
+
+// Cost burden color scales: 0 (no burden) → 1 (fully burdened)
+const ownerColorScale = scaleLinear().domain([0, 0.5, 1]).range(["#fffde7", "#fbc02d", "#e65100"]).clamp(true);
+const renterColorScale = scaleLinear().domain([0, 0.5, 1]).range(["#e8f5e9", "#4caf50", "#1b5e20"]).clamp(true);
+
+// Helper to get cost burden data for a region and year
+const getCbData = (name, year) => {
+    const d = affordabilityData[name];
+    if (!d || !d[year]) return null;
+    return d[year];
+};
+
+// Helper to get vacancy data
+const getVacancyData = (name) => {
+    const d = vacancyData[name];
+    if (!d) return null;
     return d;
 };
 
@@ -56,8 +88,8 @@ const ANNOTATED_PLACES = {
     "Cuyama": { dx: -10, dy: 30 }
 };
 
-const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onRegionSelect = () => { } }) => {
-    const [position, setPosition] = useState({ coordinates: [-120.0, 34.73], zoom: 0.95 });
+const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onRegionSelect = () => { }, imsCycle = 'cycle6', cbSubLayer = 'owner', cbYear = '2019', availSubLayer = 'overall', scenarioOverride = null }) => {
+    const [position, setPosition] = useState({ coordinates: [-119.97, 34.73], zoom: 0.95 });
     const [searchTerm, setSearchTerm] = useState("");
     const [highlightedRegion, setHighlightedRegion] = useState(null);
     const [hoveredRegion, setHoveredRegion] = useState(null);
@@ -105,8 +137,17 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
         if (activeLayer === 'permits') {
             return allPlaces.filter(name => getRegionData(name) !== null).length;
         }
+        if (activeLayer === 'ims') {
+            return allPlaces.filter(name => getImsData(name, imsCycle) !== null).length;
+        }
+        if (activeLayer === 'costburden') {
+            return allPlaces.filter(name => getCbData(name, cbYear) !== null).length;
+        }
+        if (activeLayer === 'availability') {
+            return allPlaces.filter(name => getVacancyData(name) !== null).length;
+        }
         return allPlaces.length;
-    }, [activeLayer, allPlaces]);
+    }, [activeLayer, imsCycle, cbYear, allPlaces]);
 
     const handleSearch = (e) => {
         const val = e.target.value;
@@ -132,6 +173,43 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
 
     return (
         <div style={{ width: '100%', height: '100%', position: 'relative' }}>
+            {/* Fixed Title */}
+            <h1 style={{
+                position: 'absolute',
+                top: '20px',
+                left: '20%',
+                transform: 'translateX(-50%)',
+                zIndex: 40,
+                margin: 0,
+                fontSize: '1.8rem',
+                fontWeight: 800,
+                color: 'var(--text-primary)',
+                letterSpacing: '-0.02em',
+                pointerEvents: 'none',
+                textShadow: '0 2px 10px rgba(0,0,0,0.5)'
+            }}>
+                Santa Barbara County
+            </h1>
+
+            {scenarioOverride && (
+                <div style={{
+                    position: 'absolute',
+                    top: '60px',
+                    left: '20%',
+                    transform: 'translateX(-50%)',
+                    zIndex: 40,
+                    background: 'var(--accent-purple)',
+                    color: 'white',
+                    padding: '4px 10px',
+                    borderRadius: '12px',
+                    fontSize: '0.8rem',
+                    fontWeight: 700,
+                    boxShadow: '0 4px 12px rgba(139,92,246,0.4)',
+                    pointerEvents: 'none'
+                }}>
+                    Scenario Mode Active
+                </div>
+            )}
 
             <div className="map-controls">
                 <div className="search-container glass-panel">
@@ -165,6 +243,67 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                             <span>Easy (0)</span>
                             <span>Hard (1)</span>
                         </div>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.68rem' }}>Share of housing pipeline that never completed — lower is better</span>
+                    </div>
+                )}
+                {activeLayer === 'costburden' && (
+                    <div className="map-legend glass-panel" style={{ padding: '15px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                            {cbSubLayer === 'owner' ? 'Owner Cost Burden' : 'Renter Cost Burden'}
+                        </span>
+                        <div style={{
+                            width: '100%', height: '8px', borderRadius: '4px', background: cbSubLayer === 'owner'
+                                ? 'linear-gradient(to right, #fffde7, #fbc02d, #e65100)'
+                                : 'linear-gradient(to right, #e8f5e9, #4caf50, #1b5e20)'
+                        }} />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.75rem', fontWeight: 500 }}>
+                            <span>0%</span>
+                            <span>50%</span>
+                            <span>100%</span>
+                        </div>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.68rem' }}>Share of households spending &gt;30% of income on housing</span>
+                    </div>
+                )}
+                {activeLayer === 'ims' && (
+                    <div className="map-legend glass-panel" style={{
+                        padding: '15px',
+                        display: 'flex',
+                        flexDirection: 'column',
+                        gap: '8px'
+                    }}>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Income Mismatch Score</span>
+                        <div style={{ width: '100%', height: '8px', background: 'linear-gradient(to right, #fde8c8, #f5a94e, #e06e10, #c75000)', borderRadius: '4px' }}></div>
+                        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.75rem', fontWeight: 500 }}>
+                            <span>Low</span>
+                            <span>High</span>
+                        </div>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.68rem' }}>Log scale — higher = greater housing shortage at affordable tiers</span>
+                    </div>
+                )}
+                {activeLayer === 'availability' && (
+                    <div className="map-legend glass-panel" style={{ padding: '15px', display: 'flex', flexDirection: 'column', gap: '8px' }}>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.8rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
+                            {availSubLayer === 'owner' ? 'Owner Vacancy Rate' : availSubLayer === 'renter' ? 'Renter Vacancy Rate' : 'Overall Vacancy Rate'}
+                        </span>
+                        <div style={{
+                            width: '100%', height: '8px', borderRadius: '4px', background: availSubLayer === 'owner'
+                                ? 'linear-gradient(to right, #fffde7, #fbc02d, #e65100)'
+                                : availSubLayer === 'renter'
+                                    ? 'linear-gradient(to right, #e8f5e9, #4caf50, #1b5e20)'
+                                    : 'linear-gradient(to right, #e3e8f0, #8fa3bf, #1d3557)'
+                        }} />
+                        <div style={{ display: 'flex', justifyContent: 'space-between', color: 'var(--text-secondary)', fontSize: '0.75rem', fontWeight: 500 }}>
+                            <span>0%</span>
+                            <span>50%</span>
+                            <span>100%</span>
+                        </div>
+                        <span style={{ color: 'var(--text-muted)', fontSize: '0.68rem', textAlign: 'center' }}>
+                            {availSubLayer === 'overall'
+                                ? 'Vacant / Total Housing Units'
+                                : availSubLayer === 'renter'
+                                    ? 'For Rent / Total Vacant Units'
+                                    : 'For Sale / Total Vacant Units'}
+                        </span>
                     </div>
                 )}
             </div>
@@ -174,13 +313,16 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                 bottom: '15px',
                 left: '15px',
                 zIndex: 50,
-                padding: '10px 14px',
+                padding: '12px 18px',
                 display: 'flex',
                 flexDirection: 'column',
-                gap: '2px'
+                gap: '4px',
+                background: 'rgba(0,0,0,0.5)',
+                borderRadius: '12px',
+                border: '1px solid rgba(255,255,255,0.1)'
             }}>
-                <span style={{ color: 'var(--text-muted)', fontSize: '0.75rem', fontWeight: 400, textTransform: 'uppercase', letterSpacing: '0.05em' }}>Total Regions</span>
-                <span style={{ color: 'var(--text-primary)', fontSize: '0.8rem', fontWeight: 600 }}>{visibleRegionsCount}</span>
+                <span style={{ color: 'var(--text-muted)', fontSize: '0.85rem', fontWeight: 600, textTransform: 'uppercase', letterSpacing: '0.08em' }}>Total Regions</span>
+                <span style={{ color: 'var(--text-primary)', fontSize: '1.2rem', fontWeight: 800 }}>{visibleRegionsCount}</span>
             </div>
 
             <div
@@ -229,24 +371,79 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                                     const isHighlighted = (highlightedRegion === name) || (hoveredRegion === name);
                                     const isSelected = selectedRegion === name;
 
+                                    // --- Friction layer ---
                                     const regionData = getRegionData(name);
-                                    const hasData = regionData !== null;
-                                    const frictionRate = hasData ? regionData.frictionRate : 0;
+                                    const hasFriction = regionData !== null;
+
+                                    // --- IMS layer ---
+                                    const isCycleKey = activeLayer === 'ims' ? imsCycle : null;
+                                    const imsRegion = isCycleKey ? getImsData(name, isCycleKey) : null;
+                                    const hasIms = imsRegion !== null;
+
+                                    // --- Cost Burden layer ---
+                                    const cbRegion = activeLayer === 'costburden' ? getCbData(name, cbYear) : null;
+                                    const hasCb = cbRegion !== null;
+
+                                    // --- Availability layer ---
+                                    const vacRegion = activeLayer === 'availability' ? getVacancyData(name) : null;
+                                    const hasVac = vacRegion !== null;
+
+                                    const hasData = activeLayer === 'permits' ? hasFriction
+                                        : activeLayer === 'ims' ? hasIms
+                                            : activeLayer === 'costburden' ? hasCb
+                                                : activeLayer === 'availability' ? hasVac
+                                                    : false;
 
                                     let fillStyle = "var(--map-place-fill)";
                                     let hoverFillStyle = "var(--map-place-hover)";
 
-                                    if (activeLayer === 'permits' && hasData) {
-                                        fillStyle = colorScale(frictionRate);
+                                    if (activeLayer === 'permits' && hasFriction) {
+                                        fillStyle = colorScale(regionData.frictionRate);
                                         hoverFillStyle = fillStyle;
                                     }
 
-                                    if (isSelected && activeLayer === 'permits') {
+                                    if (activeLayer === 'ims' && hasIms) {
+                                        const imsVal = Math.max(imsRegion.ims, IMS_MIN);
+                                        fillStyle = imsColorScale(imsVal);
+                                        hoverFillStyle = fillStyle;
+                                    }
+
+                                    if (activeLayer === 'costburden' && hasCb) {
+                                        const rate = cbSubLayer === 'owner'
+                                            ? (cbRegion.ownerRate ?? 0)
+                                            : (cbRegion.renterRate ?? 0);
+                                        fillStyle = cbSubLayer === 'owner'
+                                            ? ownerColorScale(rate)
+                                            : renterColorScale(rate);
+                                        hoverFillStyle = fillStyle;
+                                    }
+
+                                    if (activeLayer === 'availability' && hasVac) {
+                                        const overallScale = scaleLinear().domain([0, 0.3, 0.7]).range(['#e3e8f0', '#8fa3bf', '#1d3557']).clamp(true);
+                                        const rate = availSubLayer === 'owner'
+                                            ? (vacRegion.ownerRate ?? 0)
+                                            : availSubLayer === 'renter'
+                                                ? (vacRegion.renterRate ?? 0)
+                                                : (vacRegion.overallRate ?? 0);
+                                        fillStyle = availSubLayer === 'owner'
+                                            ? ownerColorScale(rate)
+                                            : availSubLayer === 'renter'
+                                                ? renterColorScale(rate)
+                                                : overallScale(rate);
+                                        hoverFillStyle = fillStyle;
+                                    }
+
+                                    if (isSelected && !scenarioOverride && (activeLayer === 'permits' || activeLayer === 'ims' || activeLayer === 'costburden' || activeLayer === 'availability')) {
                                         fillStyle = "rgba(255,255,255,0.25)";
                                         hoverFillStyle = "rgba(255,255,255,0.25)";
                                     }
 
-                                    if (isHighlighted && (activeLayer === 'none' || !hasData)) {
+                                    if (scenarioOverride && scenarioOverride.region === name) {
+                                        fillStyle = ownerColorScale(scenarioOverride.burden);
+                                        hoverFillStyle = fillStyle;
+                                    }
+
+                                    if (isHighlighted && !scenarioOverride && (activeLayer === 'none' || !hasData)) {
                                         fillStyle = "var(--accent-purple)";
                                         hoverFillStyle = "var(--accent-purple)";
                                     }
@@ -307,7 +504,7 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                                                         textAnchor={annotation.dx < 0 ? "end" : "start"}
                                                         alignmentBaseline="middle"
                                                         fill={isHighlighted ? "#fff" : "var(--text-secondary)"}
-                                                        fontSize={8.5}
+                                                        fontSize={11}
                                                         fontWeight={500}
                                                         onMouseEnter={onEnter}
                                                         onMouseLeave={handleMouseLeave}
@@ -343,6 +540,21 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                     <ZoomOut size={20} />
                 </button>
             </div>
+
+            {/* Hover tooltip — fixed center overlay */}
+            <MapTooltip
+                place={hoveredRegion}
+                employmentData={employmentData}
+                commuteData={commuteData}
+                vacancyData={vacancyData}
+                affordabilityData={affordabilityData}
+                heatmapData={heatmapData}
+                imsData={imsData}
+                activeLayer={activeLayer}
+                cbYear={cbYear}
+                imsCycle={imsCycle}
+                visible={!!hoveredRegion}
+            />
         </div>
     );
 };

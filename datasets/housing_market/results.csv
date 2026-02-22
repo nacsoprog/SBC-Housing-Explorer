@@ -1,0 +1,7 @@
+run_id,model_name,search_type,rag_k,chunk_size,chunk_overlap,model_config,Samples Processed,Processing Time,Samples Per Second,Total,Recall@TopK,model
+1,llama-3.3-70b-versatile,similarity,3,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,200.05 seconds,0.05,10,0.13333333333333333,unknown
+2,llama-3.3-70b-versatile,similarity,5,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,189.27 seconds,0.05,10,0.13333333333333333,unknown
+3,llama-3.2-3b-preview,similarity,3,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,129.22 seconds,0.08,10,0.13333333333333333,unknown
+4,llama-3.2-3b-preview,similarity,5,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,124.92 seconds,0.08,10,0.13333333333333333,unknown
+5,gemma2-9b-it,similarity,3,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,64.56 seconds,0.15,10,0.13333333333333333,unknown
+6,gemma2-9b-it,similarity,5,500,0,"{'temperature': 0.1, 'max_completion_tokens': 256}",10,60.27 seconds,0.17,10,0.13333333333333333,unknown

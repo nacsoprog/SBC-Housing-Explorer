@@ -1,0 +1,35 @@
+Place,Renter Households,Owner households,Occupied Housing Units,Vacant Housing Units,Group Quarter Population,Overcrowded Units (1.01-1.51 occupants/room),Severely Overcorwded Units (>1.51 occupants/room),Percentage Overcrowded,Percentage Severely Overcrowded, Overcrowded Owner Units,Severely Overcrowded Owner Units, Overcrowded Owner Units (%),Severely Overcrowded Owner Units (%), Overcrowded Renter Units,Severely Overcrowded Renter Units,Overcrowded Renter Units (%),Severely Overcrowded Renter Units (%)
+"Ballard CDP, California",112,182,294,66,0,9,6,3%,2%,5,2,3%,1%,4,4,4%,4%
+"Buellton city, California",762,1171,"1,933",297,0,55,0,3%,0%,3,0,0%,0%,52,0,7%,0%
+"Carpinteria city, California",2105,3006,"5,111",921,47,406,138,8%,3%,178,19,6%,1%,228,119,11%,6%
+"Casmalia CDP, California",39,27,66,0,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Cuyama CDP, California",0,7,7,0,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Eastern Goleta Valley CDP, California",2771,7571,"10,342",648,"1,071",372,62,4%,1%,220,41,3%,1%,152,21,5%,1%
+"Garey CDP, California",0,22,22,0,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Goleta city, California",5919,6216,"12,135",592,230,1182,448,10%,4%,364,107,6%,2%,818,341,14%,6%
+"Guadalupe city, California",929,1209,"2,138",143,0,558,155,26%,7%,118,55,10%,5%,440,100,47%,11%
+"Isla Vista CDP, California",4544,45,"4,589",577,"1,722",804,238,18%,5%,0,0,0%,0%,804,238,18%,5%
+"Lompoc city, California",6938,6915,"13,853",627,"2,964",1542,348,11%,3%,518,81,7%,1%,1024,267,15%,4%
+"Los Alamos CDP, California",101,390,491,128,23,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Los Olivos CDP, California",57,341,398,47,48,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Mission Canyon CDP, California",245,652,897,107,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Mission Hills CDP, California",279,967,"1,246",0,0,59,0,5%,0%,59,0,6%,0%,0,0,0%,0%
+"Montecito CDP, California",884,2461,"3,345",798,"1,179",47,27,1%,1%,31,27,1%,1%,16,0,2%,0%
+"New Cuyama CDP, California",10,202,212,87,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Orcutt CDP, California",2452,8693,"11,145",393,221,360,37,3%,0%,139,9,2%,0%,221,28,9%,1%
+"Santa Barbara city, California",22052,14566,"36,618","2,397","2,224",2756,1261,8%,3%,354,108,2%,1%,2402,1153,11%,5%
+"Santa Maria city, California",14202,14890,"29,092","1,120","1,423",5953,2776,20%,10%,1544,589,10%,4%,4409,2187,31%,15%
+"Santa Ynez CDP, California",551,1177,"1,728",206,21,86,35,5%,2%,41,35,3%,3%,45,0,8%,0%
+"Sisquoc CDP, California",39,47,86,0,0,6,2,7%,2%,2,2,4%,4%,4,0,10%,0%
+"Solvang city, California",1000,1526,"2,526",93,129,146,73,6%,3%,0,0,0%,0%,146,73,15%,7%
+"Summerland CDP, California",107,425,532,197,0,0,0,0%,0%,0,0,0%,0%,0,0,0%,0%
+"Toro Canyon CDP, California",99,746,845,257,7,26,11,3%,1%,15,0,2%,0%,11,11,11%,11%
+"University of California-Santa Barbara CDP, California",556,116,672,49,"10,035",29,0,4%,0%,0,0,0%,0%,29,0,5%,0%
+"Vandenberg AFB CDP, California",1179,0,"1,179",13,348,10,10,1%,1%,0,0,0%,0%,10,10,1%,1%
+"Vandenberg Village CDP, California",634,1992,"2,626",135,33,71,17,3%,1%,71,17,4%,1%,0,0,0%,0%
+"Santa Barbara County, California","70,206","78,754","148,960","10,806",22290,9048,5675,6%,4%,"2,688",1123,3%,1%,"6,360",4552,9%,6%
+Santa Barbara County (Northwest)--Santa Maria City & Orcutt PUMA,"16,191","21,662","37,853","1,423",1644,3482,2751,9%,7%,"1,085",553,5%,3%,"2,397",2198,15%,14%
+"Santa Barbara County (North)--Lompoc, Guadalupe, Solvang & Buellton Cities PUMA","14,383","20,884","35,267","2,665",3930,2125,744,6%,2%,730,268,3%,1%,"1,395",476,10%,3%
+Santa Barbara County--South Coast Region PUMA,"39,632","36,208",75840.00,"6,718",16716,3441,2180,5%,3%,873,302,2%,1%,"2,568",1878,6%,5%
+North County (Santa Maria/Orcutt + Lompoc/Guadalupe/Solvang/Buellton PUMAs),30574.00,42546.00,73120.00,4088.00,5574.00,5607.00,3495.00,5%,3%,1815.00,821.00,4%,1%,3792.00,2354.00,21%,14%
+South Coast (PUMA),"39,632","36,208",75840.00,"6,718",16716,3441,2180,5%,3%,873,302,2%,1%,"2,568",1878,6%,5%
