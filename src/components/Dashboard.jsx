@@ -8,7 +8,7 @@ import vacancyData from '../data/vacancy_data.json';
 
 /**
  * Main application dashboard containing the interactive map, 
- * data visualization layers, AI advisor chat, and the Scenario Explorer.
+ * data visualization layers, and region analysis panels.
  */
 const Dashboard = () => {
     const [activeLayer, setActiveLayer] = useState('none');
@@ -19,9 +19,6 @@ const Dashboard = () => {
     const [cbSubLayer, setCbSubLayer] = useState('owner');
     const [cbYear, setCbYear] = useState('2019');
     const [cbInfoOpen, setCbInfoOpen] = useState(false);
-    const [availSubLayer, setAvailSubLayer] = useState('overall');
-    const [availInfoOpen, setAvailInfoOpen] = useState(false);
-
     const [availSubLayer, setAvailSubLayer] = useState('overall');
     const [availInfoOpen, setAvailInfoOpen] = useState(false);
 
