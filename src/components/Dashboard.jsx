@@ -22,75 +22,10 @@ const Dashboard = () => {
     const [availSubLayer, setAvailSubLayer] = useState('overall');
     const [availInfoOpen, setAvailInfoOpen] = useState(false);
 
-    // Scenario Explorer configuration and debounced prediction state
-    const [scenarioOpen, setScenarioOpen] = useState(false);
-    const [scenarioRegion, setScenarioRegion] = useState('');
-    const [scenarioVars, setScenarioVars] = useState({
-        population: 50000,
-        very_low: 10,
-        low: 20,
-        moderate: 30,
-        above_moderate: 40,
-    });
-    const [scenarioPrediction, setScenarioPrediction] = useState(null);
-    const [scenarioLoading, setScenarioLoading] = useState(false);
-    const debounceRef = useRef(null);
+    const [availSubLayer, setAvailSubLayer] = useState('overall');
+    const [availInfoOpen, setAvailInfoOpen] = useState(false);
 
-    const API_URL = 'http://localhost:8000';
 
-    const fetchPrediction = useCallback(async (vars, region) => {
-        setScenarioLoading(true);
-        try {
-            const res = await fetch(`${API_URL}/predict`, {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ jurisdiction: region || 'Custom', ...vars }),
-            });
-            const data = await res.json();
-            setScenarioPrediction(data.predicted_burden);
-        } catch (e) {
-            console.error('API error:', e);
-            setScenarioPrediction(null);
-        } finally {
-            setScenarioLoading(false);
-        }
-    }, []);
-
-    // Calculate slider maxes dynamically based on selected region's estimated households.
-    // If no region or data, use default large numbers.
-    const scenarioMaxes = React.useMemo(() => {
-        let baseMaxPop = 200000;
-        let baseMaxTier = 500;
-        let baseMaxAbove = 2000;
-
-        if (scenarioRegion && vacancyData[scenarioRegion]) {
-            const vac = vacancyData[scenarioRegion];
-            const estHouseholds = (vac.occupied || 0) + (vac.totalVacant || 0);
-            if (estHouseholds > 0) {
-                // Population is roughly households * 2.8. Let's add padding (e.g., 2.5x the estimate).
-                baseMaxPop = Math.ceil((estHouseholds * 2.8 * 2.5) / 1000) * 1000;
-                // RHNA/Permit totals scale with households. We'll set the max to around 4% of households as padding.
-                baseMaxTier = Math.max(100, Math.ceil((estHouseholds * 0.04) / 50) * 50);
-                // Above moderate is larger, so ~12% padding.
-                baseMaxAbove = Math.max(200, Math.ceil((estHouseholds * 0.12) / 100) * 100);
-            }
-        }
-
-        return {
-            population: baseMaxPop,
-            very_low: baseMaxTier,
-            low: baseMaxTier,
-            moderate: baseMaxTier,
-            above_moderate: baseMaxAbove,
-        };
-    }, [scenarioRegion]);
-
-    const handleScenarioChange = (key, value) => {
-        const updated = { ...scenarioVars, [key]: Number(value) };
-        setScenarioVars(updated);
-        clearTimeout(debounceRef.current);
-        debounceRef.current = setTimeout(() => fetchPrediction(updated, scenarioRegion), 220);
-    };
 
     const frictionRegionData = selectedRegion ? heatmapData[selectedRegion] : null;
     const imsRegionData = selectedRegion ? imsData[selectedRegion] : null;
@@ -415,86 +350,7 @@ const Dashboard = () => {
                     </div>
                 </div>
 
-                {/* ── Scenario Explorer Panel ───────────────────────── */}
-                <div style={{ marginTop: '20px' }}>
-                    <div
-                        style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', cursor: 'pointer', marginBottom: '8px' }}
-                        onClick={() => setScenarioOpen(!scenarioOpen)}
-                    >
-                        <h2 style={{ color: 'var(--text-muted)', fontSize: '0.8rem', textTransform: 'uppercase', letterSpacing: '0.05em', margin: 0 }}>
-                            Scenario Explorer <span style={{ fontSize: '0.6rem', background: 'var(--accent-purple)', padding: '2px 6px', borderRadius: '4px', color: 'white', marginLeft: '6px' }}>Beta</span>
-                        </h2>
-                        <ChevronDown size={14} style={{ color: 'var(--text-muted)', transform: scenarioOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: 'transform 0.2s' }} />
-                    </div>
 
-                    {scenarioOpen && (
-                        <div style={{ ...cardStyle, display: 'flex', flexDirection: 'column', gap: '12px', marginTop: '8px' }}>
-                            <p style={{ fontSize: '0.75rem', color: 'var(--text-secondary)', lineHeight: 1.4, margin: 0 }}>
-                                Tweak variables to predict housing cost burden in real-time.
-                            </p>
-
-                            <select
-                                value={scenarioRegion}
-                                onChange={(e) => {
-                                    setScenarioRegion(e.target.value);
-                                    if (e.target.value) fetchPrediction(scenarioVars, e.target.value);
-                                }}
-                                style={{
-                                    width: '100%',
-                                    padding: '6px',
-                                    borderRadius: '4px',
-                                    background: 'rgba(0,0,0,0.2)',
-                                    color: 'white',
-                                    border: '1px solid rgba(255,255,255,0.1)',
-                                    fontSize: '0.8rem',
-                                    outline: 'none'
-                                }}
-                            >
-                                <option value="">Select a region...</option>
-                                {Object.keys(affordabilityData).sort().map(r => (
-                                    <option key={r} value={r}>{r}</option>
-                                ))}
-                            </select>
-
-                            {[
-                                { key: 'population', label: 'Population' },
-                                { key: 'very_low', label: 'Very Low Income' },
-                                { key: 'low', label: 'Low Income' },
-                                { key: 'moderate', label: 'Moderate Income' },
-                                { key: 'above_moderate', label: 'Above Moderate Income' },
-                            ].map(({ key, label }) => {
-                                const max = scenarioMaxes[key];
-                                return (
-                                    <div key={key}>
-                                        <div style={{ display: 'flex', justifyContent: 'space-between', fontSize: '0.75rem', marginBottom: '4px' }}>
-                                            <span style={{ color: 'var(--text-muted)' }}>{label}</span>
-                                            <span style={{ color: 'white', fontWeight: 600 }}>{scenarioVars[key]}</span>
-                                        </div>
-                                        <input
-                                            type="range"
-                                            min={0}
-                                            max={max}
-                                            value={scenarioVars[key]}
-                                            onChange={(e) => handleScenarioChange(key, e.target.value)}
-                                            style={{ width: '100%', cursor: 'pointer', accentColor: 'var(--accent-purple)' }}
-                                        />
-                                    </div>
-                                );
-                            })}
-
-                            <div style={{ marginTop: '4px', paddingTop: '10px', borderTop: '1px solid rgba(255,255,255,0.1)', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-                                <span style={{ fontSize: '0.8rem', color: 'var(--text-muted)' }}>Predicted Burden:</span>
-                                {scenarioLoading ? (
-                                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>...</span>
-                                ) : scenarioPrediction !== null ? (
-                                    <span style={{ fontSize: '1.2rem', fontWeight: 800, color: 'var(--accent-purple)' }}>{(scenarioPrediction * 100).toFixed(1)}%</span>
-                                ) : (
-                                    <span style={{ fontSize: '0.9rem', color: 'var(--text-secondary)' }}>--</span>
-                                )}
-                            </div>
-                        </div>
-                    )}
-                </div>
 
                 {/* ── Region Analysis Panel ─────────────────────────── */}
                 <div style={{ marginTop: '20px' }}>
@@ -794,9 +650,6 @@ const Dashboard = () => {
                     cbSubLayer={cbSubLayer}
                     cbYear={cbYear}
                     availSubLayer={availSubLayer}
-                    scenarioOverride={scenarioPrediction !== null && scenarioRegion
-                        ? { region: scenarioRegion, burden: scenarioPrediction }
-                        : null}
                 />
             </main>
         </div>

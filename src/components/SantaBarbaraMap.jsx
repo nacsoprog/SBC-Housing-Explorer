@@ -88,7 +88,7 @@ const ANNOTATED_PLACES = {
     "Cuyama": { dx: -10, dy: 30 }
 };
 
-const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onRegionSelect = () => { }, imsCycle = 'cycle6', cbSubLayer = 'owner', cbYear = '2019', availSubLayer = 'overall', scenarioOverride = null }) => {
+const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onRegionSelect = () => { }, imsCycle = 'cycle6', cbSubLayer = 'owner', cbYear = '2019', availSubLayer = 'overall' }) => {
     const [position, setPosition] = useState({ coordinates: [-119.97, 34.73], zoom: 0.95 });
     const [searchTerm, setSearchTerm] = useState("");
     const [highlightedRegion, setHighlightedRegion] = useState(null);
@@ -191,25 +191,7 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                 Santa Barbara County
             </h1>
 
-            {scenarioOverride && (
-                <div style={{
-                    position: 'absolute',
-                    top: '60px',
-                    left: '20%',
-                    transform: 'translateX(-50%)',
-                    zIndex: 40,
-                    background: 'var(--accent-purple)',
-                    color: 'white',
-                    padding: '4px 10px',
-                    borderRadius: '12px',
-                    fontSize: '0.8rem',
-                    fontWeight: 700,
-                    boxShadow: '0 4px 12px rgba(139,92,246,0.4)',
-                    pointerEvents: 'none'
-                }}>
-                    Scenario Mode Active
-                </div>
-            )}
+
 
             <div className="map-controls">
                 <div className="search-container glass-panel">
@@ -434,12 +416,7 @@ const SantaBarbaraMap = ({ activeLayer = 'permits', selectedRegion = null, onReg
                                         hoverFillStyle = fillStyle;
                                     }
 
-                                    if (scenarioOverride && scenarioOverride.region === name) {
-                                        fillStyle = ownerColorScale(scenarioOverride.burden);
-                                        hoverFillStyle = fillStyle;
-                                    }
-
-                                    if (isHighlighted && !scenarioOverride && (activeLayer === 'none' || !hasData)) {
+                                    if (isHighlighted && (activeLayer === 'none' || !hasData)) {
                                         fillStyle = "var(--accent-purple)";
                                         hoverFillStyle = "var(--accent-purple)";
                                     }
