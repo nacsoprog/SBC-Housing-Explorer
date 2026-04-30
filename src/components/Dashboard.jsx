@@ -1,7 +1,6 @@
 import React, { useState, useCallback, useRef } from 'react';
-import { Layers, ChevronDown, MessageSquare } from 'lucide-react';
+import { Layers, ChevronDown } from 'lucide-react';
 import SantaBarbaraMap from './SantaBarbaraMap';
-import AIAdvisor from './AIAdvisor';
 import heatmapData from '../data/heatmap_data.json';
 import imsData from '../data/ims_data.json';
 import affordabilityData from '../data/affordability_data.json';
@@ -22,7 +21,6 @@ const Dashboard = () => {
     const [cbInfoOpen, setCbInfoOpen] = useState(false);
     const [availSubLayer, setAvailSubLayer] = useState('overall');
     const [availInfoOpen, setAvailInfoOpen] = useState(false);
-    const [aiOpen, setAiOpen] = useState(false);
 
     // Scenario Explorer configuration and debounced prediction state
     const [scenarioOpen, setScenarioOpen] = useState(false);
@@ -137,29 +135,6 @@ const Dashboard = () => {
                 <div className="sidebar-header">
                     <h1 style={{ fontSize: '1.25rem', fontWeight: 800, color: 'var(--text-primary)', letterSpacing: '-0.02em', lineHeight: 1.1, marginBottom: '2px' }}>Santa Barbara</h1>
                     <p style={{ fontSize: '0.78rem', color: 'var(--text-secondary)', fontWeight: 500, lineHeight: 1.2, letterSpacing: '0.02em' }}>Housing Explorer</p>
-                    <button
-                        onClick={() => setAiOpen(o => !o)}
-                        style={{
-                            marginTop: '8px',
-                            width: '100%',
-                            display: 'flex',
-                            alignItems: 'center',
-                            justifyContent: 'center',
-                            gap: '5px',
-                            padding: '7px 4px',
-                            background: aiOpen ? 'rgba(60,225,231,0.2)' : 'rgba(60,225,231,0.08)',
-                            border: '1px solid rgba(125,212,239,0.35)',
-                            borderRadius: '7px',
-                            color: '#3ce1e7',
-                            fontWeight: 700,
-                            fontSize: '0.65rem',
-                            cursor: 'pointer',
-                            transition: 'all 0.2s',
-                        }}
-                    >
-                        <MessageSquare size={11} />
-                        AI Advisor
-                    </button>
                 </div>
 
                 {/* Layer Controls */}
@@ -824,8 +799,6 @@ const Dashboard = () => {
                         : null}
                 />
             </main>
-
-            <AIAdvisor isOpen={aiOpen} onClose={() => setAiOpen(false)} />
         </div>
     );
 };

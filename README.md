@@ -46,7 +46,7 @@ All predictors are normalized. Hyperparameters are tuned over regularized grids 
 
 **Results:**
 
-KNN outperformed all other models on cross-validation RMSE and was selected as the final model. Final model performance was validated on the held-out test set via `last_fit()`, with residual diagnostics (residuals vs. predicted, Q-Q plot, actual vs. predicted) confirming reasonable fit with no severe systematic bias.
+Random Forest outperformed all other models on cross-validation RMSE and was selected as the final model. Final model performance was validated on the held-out test set via `last_fit()`, with residual diagnostics (residuals vs. predicted, Q-Q plot, actual vs. predicted) confirming reasonable fit with no severe systematic bias.
 
 **Key finding:** Income-stratified housing production data (particularly very low and low income completions) shows meaningful correlation with cost burden rates, supporting the case that failing to complete affordable housing directly drives cost burden.
 
